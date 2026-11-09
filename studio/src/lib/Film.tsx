@@ -22,12 +22,17 @@ export type ShotPlan = {
   // narration: Piper TTS voiceover lines for this shot. `at` = seconds into the shot.
   narration?: { at: number; text: string; startSec?: number; endSec?: number }[];
   foley?: string[]; // what the shot's code plays (Footsteps, Typing, Writing, Sfx) — for the checker
+  // kit films (src/kit): the scene to show, its props, and the line to say
+  scene?: string;
+  props?: Record<string, unknown>;
+  say?: string;
 };
 
 export type Storyboard = {
   slug: string;
   title: string;
   habit: string;
+  format?: "short" | "long"; // short = 1080×1920 vertical
   mode?: "2d" | "3d"; // layered 2D (SVG puppets) or full 3D (Three.js). Default 2d.
   fps: number;
   short?: { startSec: number; endSec: number; hook: string }; // the 9:16 cut-down (turning point only)

@@ -26,7 +26,7 @@ export const Captions: React.FC<{ words: Word[] }> = ({ words }) => {
   if (!page) return null;
   const pop = interpolate(frame - page[0].from, [0, 4], [0.85, 1], { extrapolateRight: "clamp" });
   return (
-    <AbsoluteFill style={{ top: 1180, height: 260, alignItems: "center", justifyContent: "center", padding: "0 90px" }}>
+    <AbsoluteFill style={{ top: 1300, height: 240, alignItems: "center", justifyContent: "center", padding: "0 90px" }}>
       <div style={{ transform: `scale(${pop})`, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 92, lineHeight: 1.1, textTransform: "uppercase", WebkitTextStroke: "14px #0b0f1e", paintOrder: "stroke fill", letterSpacing: 1 }}>
         {page.map((w, i) => (
           <span key={i} style={{ color: frame >= w.from && frame < w.to + 2 ? "#FFD84D" : "#FFFFFF" }}>{w.text.replace(/[.,!?]$/, "")} </span>

@@ -17,20 +17,26 @@ export const FACES = ["neutral", "surprised", "sad", "angry"] as const;
 export type Face = (typeof FACES)[number];
 
 const ONCE: Anim[] = ["Death", "Sitting", "Standing"];
-const HEIGHT = 1.8; // robot is normalised to ~1.8 m tall
+// Measured: the posed robot is 4.46 units tall → ×0.4 ≈ 1.8 m.
+const SCALE = 0.4;
 
 let robot: Promise<GLTF> | null = null;
 const loadRobot = () => (robot ??= new GLTFLoader().loadAsync(staticFile("models/robot.glb")));
 
-export const Robot: React.FC<{ anim?: Anim; face?: Face; at?: [number, number, number]; turn?: number }> = ({ anim = "Idle", face = "neutral", at = [0, 0, 0], turn = 0 }) => {
+// Call OUTSIDE the <ThreeCanvas> and mount the canvas only once this returns the model:
+// the canvas draws only on frame changes, so a model that arrives later would be missing.
+export const useRobotModel = () => {
   const [gltf, setGltf] = useState<GLTF | null>(null);
   const [handle] = useState(() => delayRender("Loading models/robot.glb"));
   useEffect(() => {
     loadRobot().then((g) => { setGltf(g); continueRender(handle); }).catch((e) => cancelRender(e));
   }, [handle]);
+  return gltf;
+};
+
+export const Robot: React.FC<{ gltf: GLTF; anim?: Anim; face?: Face; at?: [number, number, number]; turn?: number }> = ({ gltf, anim = "Idle", face = "neutral", at = [0, 0, 0], turn = 0 }) => {
 
   const rig = useMemo(() => {
-    if (!gltf) return null;
     const scene = clone(gltf.scene);
     const clip = THREE.AnimationClip.findByName(gltf.animations, anim);
     if (!clip) throw new Error(`Robot has no animation "${anim}". Use one of: ${ANIMS.join(", ")}`);
@@ -39,18 +45,20 @@ export const Robot: React.FC<{ anim?: Anim; face?: Face; at?: [number, number, n
     if (ONCE.includes(anim)) { action.setLoop(THREE.LoopOnce, 1); action.clampWhenFinished = true; }
     action.play();
     const faces: THREE.Mesh[] = [];
-    scene.traverse((o) => { const m = o as THREE.Mesh; if (m.morphTargetDictionary) faces.push(m); });
-    const size = new THREE.Box3().setFromObject(scene).getSize(new THREE.Vector3());
-    return { scene, mixer, faces, scale: HEIGHT / size.y };
+    scene.traverse((o) => {
+      const m = o as THREE.Mesh;
+      m.frustumCulled = false; // skinned-mesh bounds follow the bind pose, not the animation; avoid parts popping out
+      if (m.morphTargetDictionary) faces.push(m);
+    });
+    return { scene, mixer, faces };
   }, [gltf, anim]);
 
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  if (!rig) return null;
   rig.mixer.setTime(frame / fps);
   const k = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" });
   for (const m of rig.faces) {
     for (const [name, i] of Object.entries(m.morphTargetDictionary!)) m.morphTargetInfluences![i] = name.toLowerCase() === face ? k : 0;
   }
-  return <primitive object={rig.scene} position={at} rotation={[0, (turn * Math.PI) / 180, 0]} scale={rig.scale} />;
+  return <primitive object={rig.scene} position={at} rotation={[0, (turn * Math.PI) / 180, 0]} scale={SCALE} />;
 };
