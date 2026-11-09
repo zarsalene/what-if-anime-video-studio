@@ -39,7 +39,7 @@ type V3 = [number, number, number];
 type CamName = "push-in" | "low-angle" | "orbit" | "close" | "wide" | "still";
 const CAM: Record<CamName, { from: V3; to: V3; look: V3; fov: number }> = {
   "push-in": { from: [0, 1.5, 7.5], to: [0, 1.35, 5], look: [0, 1.1, 0], fov: 45 },
-  "low-angle": { from: [1.6, 0.35, 4.6], to: [0.9, 0.45, 3.9], look: [0, 2.2, 0], fov: 52 },
+  "low-angle": { from: [1.4, 0.5, 4.2], to: [0.9, 0.55, 3.6], look: [0, 1.7, 0], fov: 55 }, // face stays above the caption band
   orbit: { from: [-3.2, 1.6, 4.6], to: [3.2, 1.6, 4.6], look: [0, 1, 0], fov: 45 },
   close: { from: [0, 1.4, 3.1], to: [0, 1.4, 2.6], look: [0, 1.2, 0], fov: 40 },
   wide: { from: [0, 2.6, 11], to: [0, 2.3, 9.5], look: [0, 1.5, 0], fov: 48 },
