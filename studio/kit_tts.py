@@ -49,7 +49,7 @@ async def main(slug: str):
     out = ROOT / "public/films" / slug / "tts"
     out.mkdir(parents=True, exist_ok=True)
     names, captions = [], {}
-    for shot in sb["shots"]:
+    for i, shot in enumerate(sb["shots"]):
         if not shot.get("say"):
             continue
         name = f"{shot['id']}-{round(SAY_AT * 10)}"
@@ -63,7 +63,10 @@ async def main(slug: str):
         captions[shot["id"]] = {"dur": round(dur, 3), "words": words}
         # grow the shot to fit its line, so storyboard.json matches the video (sound_check reads it)
         shot["seconds"] = max(shot["seconds"], round(SAY_AT + dur + TAIL + 0.005, 2))
+        # fields the shared check scripts (sound_check, contact_sheet) expect
+        shot.setdefault("beat", i + 1)
         shot.setdefault("kind", "story")
+        shot.setdefault("what", shot["say"])
         names.append(name)
         print(f"{name}: {dur:.2f}s  {len(words)} words")
     (film / "storyboard.json").write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
