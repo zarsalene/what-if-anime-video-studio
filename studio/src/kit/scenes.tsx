@@ -162,7 +162,7 @@ export const RobotSky: React.FC<Record<string, unknown>> = (p) => {
   const D = LOOK.dark;
   const k = time === "night" ? 1 - moonK : 0;
   const sky: [string, string] = [mix(L.sky[0], D.sky[0], k), mix(L.sky[1], D.sky[1], k)];
-  const moonAt: V3 = [-3, 5.2, -16];
+  const moonAt: V3 = [-2.6, 4.4, -16]; // low enough to clear the top title
   const gltf = useRobotModel();
   if (!gltf) return null;
   return (
