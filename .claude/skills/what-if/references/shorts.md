@@ -1,6 +1,6 @@
 # Vertical What If Shorts
 
-Default to 9:16 (1080×1920) and 30 fps unless the user specifies another source frame rate. A clear target is 30–60 seconds. YouTube currently classifies square or vertical videos up to 3 minutes as Shorts; confirm the current official limit before export using the link in `originality-and-youtube.md`.
+Default to exactly 60 seconds, 9:16 (1080×1920), and 30 fps unless the user explicitly asks for another runtime or aspect ratio, or specifies another source frame rate. YouTube currently classifies square or vertical videos up to 3 minutes as Shorts; confirm the current official limit before export using the link in `originality-and-youtube.md`.
 
 ## Frame for a phone
 

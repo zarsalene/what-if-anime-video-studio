@@ -6,19 +6,221 @@
   "format": "short",
   "mode": "3d",
   "fps": 30,
-  "music": [{"name":"candy-score","startSec":0,"endSec":60,"volume":0.2}],
+  "music": [
+    {
+      "name": "candy-score",
+      "startSec": 0,
+      "endSec": 60,
+      "volume": 0.2
+    }
+  ],
   "ambience": [
-    {"name":"amb-city","startSec":0,"endSec":34,"volume":0.12},
-    {"name":"amb-rain","startSec":34,"endSec":60,"volume":0.10}
+    {
+      "name": "amb-city",
+      "startSec": 0,
+      "endSec": 34,
+      "volume": 0.5
+    },
+    {
+      "name": "amb-rain",
+      "startSec": 34,
+      "endSec": 60,
+      "volume": 0.5
+    }
   ],
   "shots": [
-    {"id":"s01","beat":1,"kind":"story","seconds":6,"what":"A curious anime girl looks up as jewel-bright candies begin falling above a warmly lit city street.","narration":[{"at":0.35,"startSec":0.35,"endSec":5.7,"text":"What if candy fell from the sky? It would look magical at first."}],"sfx":[{"at":0.3,"name":"whoosh","volume":0.16}],"foley":["candy fall"]},
-    {"id":"s02","beat":2,"kind":"story","seconds":7,"what":"Gummies bounce on curved rooftops and awnings while the girl opens a transparent umbrella and laughs.","narration":[{"at":0.2,"startSec":0.2,"endSec":6.8,"text":"Gummies bounce on roofs. Jelly beans tumble as people rush out to catch them."}],"sfx":[{"at":0.4,"name":"ping","volume":0.12}],"foley":["candy bouncing"]},
-    {"id":"s03","beat":3,"kind":"story","seconds":7,"what":"A dreamy cutaway reveals a real cloud made from droplets and ice crystals while candy sparkles are marked as imagination.","narration":[{"at":0.2,"startSec":0.2,"endSec":6.8,"text":"Real clouds are tiny water drops or ice. Candy takes magic."}],"sfx":[{"at":1.2,"name":"ping","volume":0.10}],"foley":["cloud reveal"]},
-    {"id":"s04","beat":4,"kind":"story","seconds":7,"what":"Close-up candies tumble through ribbons of air as size, shape and drag change their speed and path.","narration":[{"at":0.2,"startSec":0.2,"endSec":6.8,"text":"Gravity pulls candy down. Size, shape, and air drag change its speed."}],"sfx":[{"at":0.3,"name":"whoosh","volume":0.12}],"foley":["falling candy"]},
-    {"id":"s05","beat":5,"kind":"story","seconds":8,"what":"Hard sweets tap harmlessly against a padded umbrella while soft gummies squash and spring back beside the surprised girl.","narration":[{"at":0.2,"startSec":0.2,"endSec":7.8,"text":"Hard sweets could sting; soft gummies splat. Impact depends on their size and speed."}],"sfx":[{"at":0.5,"name":"water-tap","volume":0.12}],"foley":["candy impacts"]},
-    {"id":"s06","beat":6,"kind":"story","seconds":7,"what":"A candy shell dissolves in rain and sticky water flows along the curb toward a storm drain.","narration":[{"at":0.2,"startSec":0.2,"endSec":6.8,"text":"Rain melts the sugary coating, washing sticky runoff into storm drains."}],"sfx":[{"at":0.5,"name":"water-tap","volume":0.10}],"foley":["rainwater flow"]},
-    {"id":"s07","beat":6,"kind":"story","seconds":10,"what":"In a clear stream, microbes use oxygen as they break down dissolved sugar while fish move through the water.","narration":[{"at":0.2,"startSec":0.2,"endSec":9.7,"text":"In streams, microbes use dissolved oxygen to break down sugar. How much matters; dilution matters too."}],"sfx":[{"at":1.4,"name":"ping","volume":0.08}],"foley":["stream and fish"]},
-    {"id":"s08","beat":7,"kind":"story","seconds":8,"what":"The storm clears over the glowing city; the girl holds up one gummy with a sheepish smile beside the final takeaway.","narration":[{"at":0.3,"startSec":0.3,"endSec":7.8,"text":"Magical at first. Sticky for longer. Would you try it?"}],"foley":["closing card"]}
+    {
+      "id": "s01",
+      "beat": 1,
+      "kind": "story",
+      "seconds": 6,
+      "what": "A curious anime girl looks up as jewel-bright candies begin falling above a warmly lit city street.",
+      "narration": [
+        {
+          "at": 0.35,
+          "startSec": 0.35,
+          "endSec": 5.05,
+          "text": "What if candy fell from the sky? It would look magical at first."
+        }
+      ],
+      "sfx": [
+        {
+          "at": 0.3,
+          "name": "whoosh",
+          "volume": 0.16
+        }
+      ],
+      "foley": [
+        "candy fall"
+      ]
+    },
+    {
+      "id": "s02",
+      "beat": 2,
+      "kind": "story",
+      "seconds": 7,
+      "what": "Gummies bounce on curved rooftops and awnings while the girl opens a transparent umbrella and laughs.",
+      "narration": [
+        {
+          "at": 0.2,
+          "startSec": 0.2,
+          "endSec": 5.42,
+          "text": "Gummies bounce on roofs. Jelly beans tumble as people rush out to catch them."
+        }
+      ],
+      "sfx": [
+        {
+          "at": 0.4,
+          "name": "ping",
+          "volume": 0.12
+        }
+      ],
+      "foley": [
+        "candy bouncing"
+      ]
+    },
+    {
+      "id": "s03",
+      "beat": 3,
+      "kind": "story",
+      "seconds": 7,
+      "what": "A dreamy cutaway reveals a real cloud made from droplets and ice crystals while candy sparkles are marked as imagination.",
+      "narration": [
+        {
+          "at": 0.2,
+          "startSec": 0.2,
+          "endSec": 5.35,
+          "text": "Real clouds are tiny water drops or ice. Candy takes magic."
+        }
+      ],
+      "sfx": [
+        {
+          "at": 1.2,
+          "name": "ping",
+          "volume": 0.1
+        }
+      ],
+      "foley": [
+        "cloud reveal"
+      ]
+    },
+    {
+      "id": "s04",
+      "beat": 4,
+      "kind": "story",
+      "seconds": 7,
+      "what": "Close-up candies tumble through ribbons of air as size, shape and drag change their speed and path.",
+      "narration": [
+        {
+          "at": 0.2,
+          "startSec": 0.2,
+          "endSec": 5.57,
+          "text": "Gravity pulls candy down. Size, shape, and air drag change its speed."
+        }
+      ],
+      "sfx": [
+        {
+          "at": 0.3,
+          "name": "whoosh",
+          "volume": 0.12
+        }
+      ],
+      "foley": [
+        "falling candy"
+      ]
+    },
+    {
+      "id": "s05",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 8,
+      "what": "Hard sweets tap harmlessly against a padded umbrella while soft gummies squash and spring back beside the surprised girl.",
+      "narration": [
+        {
+          "at": 0.2,
+          "startSec": 0.2,
+          "endSec": 6.37,
+          "text": "Hard sweets could sting; soft gummies splat. Impact depends on their size and speed."
+        }
+      ],
+      "sfx": [
+        {
+          "at": 0.5,
+          "name": "water-tap",
+          "volume": 0.12
+        }
+      ],
+      "foley": [
+        "candy impacts"
+      ]
+    },
+    {
+      "id": "s06",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 7,
+      "what": "A candy shell dissolves in rain and sticky water flows along the curb toward a storm drain.",
+      "narration": [
+        {
+          "at": 0.2,
+          "startSec": 0.2,
+          "endSec": 5.05,
+          "text": "Rain melts the sugary coating, washing sticky runoff into storm drains."
+        }
+      ],
+      "sfx": [
+        {
+          "at": 0.5,
+          "name": "water-tap",
+          "volume": 0.1
+        }
+      ],
+      "foley": [
+        "rainwater flow"
+      ]
+    },
+    {
+      "id": "s07",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 10,
+      "what": "In a clear stream, microbes use oxygen as they break down dissolved sugar while fish move through the water.",
+      "narration": [
+        {
+          "at": 0.2,
+          "startSec": 0.2,
+          "endSec": 6.49,
+          "text": "In streams, microbes use dissolved oxygen to break down sugar. How much matters; dilution matters too."
+        }
+      ],
+      "sfx": [
+        {
+          "at": 1.4,
+          "name": "ping",
+          "volume": 0.08
+        }
+      ],
+      "foley": [
+        "stream and fish"
+      ]
+    },
+    {
+      "id": "s08",
+      "beat": 7,
+      "kind": "story",
+      "seconds": 8,
+      "what": "The storm clears over the glowing city; the girl holds up one gummy with a sheepish smile beside the final takeaway.",
+      "narration": [
+        {
+          "at": 0.3,
+          "startSec": 0.3,
+          "endSec": 6.23,
+          "text": "Magical at first. Sticky for longer. Would you try it?"
+        }
+      ],
+      "foley": [
+        "closing card"
+      ]
+    }
   ]
 }

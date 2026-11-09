@@ -5,7 +5,7 @@ description: Create original anime-style science “What If?” videos for YouTu
 
 # What If Anime Video
 
-Turn one imaginative question into a short, clear, scientifically grounded anime explainer. Default to a 30–60 second vertical YouTube Short; use another duration or aspect ratio when the user asks. Deliver the complete video package and call it ready only after the final export passes the checks below.
+Turn one imaginative question into a short, clear, scientifically grounded anime explainer. Make every What If Short exactly 60 seconds in 9:16 unless the user explicitly asks for a different runtime or aspect ratio. Deliver the complete video package and call it ready only after the final export passes the checks below.
 
 ## Read the relevant references
 
@@ -40,7 +40,7 @@ Read `references/story.md`. Write `out/<slug>/story.md` with:
 Write narration for the ear, not as an essay: vary sentence length, use natural contractions, keep one idea per breath, check pronunciation of names and numbers, and leave pauses where the image can carry meaning. Keep suspense in the question, evidence and visual reveal; avoid a permanently ominous announcer cadence.
 
 - the question and a one-sentence answer
-- narration in speakable, conversational sentences (about 65–130 words for a 30–60 second Short)
+- narration in speakable, conversational sentences (usually about 80–125 words for a 60-second Short)
 - a 7-beat arc: hook, setup, trigger, first effect, escalation, largest consequence, takeaway/question
 - the visual for every narration line, plus source links for factual claims
 - the YouTube title and a 2–3 line description
@@ -50,7 +50,7 @@ Read it aloud against the planned runtime. Remove repeated explanations, unsuppo
 ## Step 3 — Storyboard
 
 1. Create the composition with `SCRIPTS/new_film.py <slug> "<TITLE>" "<WHAT IF PREMISE>"`.
-2. Set `"format": "short"` for a 20–180 second vertical video, or `"format": "long"` for a 3–15 minute widescreen video. Default Short length is 30–60 seconds. Confirm current Shorts duration guidance in the linked YouTube reference before export.
+2. Set `"format": "short"` for a vertical video. Make the default runtime exactly 60 seconds; only use another runtime or aspect ratio when the user explicitly asks. Set `"format": "long"` for a 3–15 minute widescreen video only when requested. Confirm current Shorts duration guidance in the linked YouTube reference before export.
 3. Fill each shot with its id, beat, kind, duration, a concrete visible action, narration/caption timing, and every audible sound. Mark voice windows in the shot's `narration: [{startSec, endSec}]` list; the renderer uses these windows to duck music, ambience and effects. Keep most shots 1–4 seconds; use longer holds only for a strong reveal.
 4. Run `SCRIPTS/check_storyboard.py <slug>`. Fix all errors and review all warnings before animating.
 

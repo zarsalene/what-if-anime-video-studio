@@ -41,7 +41,7 @@ For longer videos, add character-scale examples, compare timescales, and return 
 
 ## Script and timing
 
-- Default Short: 30–60 seconds; narration usually 65–130 words.
+- Default Short: exactly 60 seconds; narration usually 80–125 words. Change the runtime only when the user asks.
 - Write for speech, not the page: use contractions, varied sentence lengths, concrete words and one main idea per breath.
 - Keep the narrator curious, warm and conversational. Put suspense in the question, facts and visual reveal; avoid making every line sound like a trailer or horror voiceover.
 - Check pronunciation of scientific terms, names, units and numbers. Spell out or phoneticize only where TTS needs help; preserve correct spelling in captions.

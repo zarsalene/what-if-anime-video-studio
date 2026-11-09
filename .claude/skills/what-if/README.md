@@ -2,7 +2,7 @@
 
 Create short, original anime-style science explainers from a “What if…?” question. The skill researches the real mechanism, writes concise narration, builds illustrated shots, mixes effects under the voice, checks the full render and delivers a downloadable YouTube-ready MP4 with a cover and publishing copy.
 
-Default output is a 30–60 second vertical Short. It can make longer or widescreen videos when asked.
+Default output is an exactly 60-second vertical Short. Use a different runtime or widescreen format when the user explicitly asks.
 
 Try:
 
