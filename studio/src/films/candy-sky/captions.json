@@ -1,0 +1,542 @@
+{
+ "s01": {
+  "dur": 5.472,
+  "words": [
+   {
+    "text": "What",
+    "start": 0.098541,
+    "end": 0.304832
+   },
+   {
+    "text": "if",
+    "start": 0.317,
+    "end": 0.426208
+   },
+   {
+    "text": "candy",
+    "start": 0.438333,
+    "end": 0.802416
+   },
+   {
+    "text": "fell",
+    "start": 0.814583,
+    "end": 1.093708
+   },
+   {
+    "text": "from",
+    "start": 1.105833,
+    "end": 1.251458
+   },
+   {
+    "text": "the",
+    "start": 1.263583,
+    "end": 1.336416
+   },
+   {
+    "text": "sky",
+    "start": 1.348541,
+    "end": 1.809707
+   },
+   {
+    "text": "At",
+    "start": 2.645625,
+    "end": 2.827666
+   },
+   {
+    "text": "first",
+    "start": 2.839791,
+    "end": 3.300957
+   },
+   {
+    "text": "it",
+    "start": 3.519416,
+    "end": 3.604374
+   },
+   {
+    "text": "would",
+    "start": 3.6165,
+    "end": 3.77425
+   },
+   {
+    "text": "look",
+    "start": 3.786416,
+    "end": 3.980582
+   },
+   {
+    "text": "magical",
+    "start": 3.992708,
+    "end": 4.623791
+   }
+  ]
+ },
+ "s02": {
+  "dur": 4.08,
+  "words": [
+   {
+    "text": "Jelly",
+    "start": 0.098541,
+    "end": 0.450499
+   },
+   {
+    "text": "beans",
+    "start": 0.462625,
+    "end": 0.826708
+   },
+   {
+    "text": "would",
+    "start": 0.838833,
+    "end": 0.984458
+   },
+   {
+    "text": "bounce",
+    "start": 0.996583,
+    "end": 1.312124
+   },
+   {
+    "text": "off",
+    "start": 1.324291,
+    "end": 1.530582
+   },
+   {
+    "text": "the",
+    "start": 1.542708,
+    "end": 1.639791
+   },
+   {
+    "text": "grass",
+    "start": 1.651958,
+    "end": 2.040291
+   },
+   {
+    "text": "and",
+    "start": 2.052416,
+    "end": 2.161624
+   },
+   {
+    "text": "pile",
+    "start": 2.173791,
+    "end": 2.501457
+   },
+   {
+    "text": "up",
+    "start": 2.513583,
+    "end": 2.659208
+   },
+   {
+    "text": "everywhere",
+    "start": 2.671375,
+    "end": 3.24175
+   }
+  ]
+ },
+ "s03": {
+  "dur": 6.264,
+  "words": [
+   {
+    "text": "But",
+    "start": 0.098541,
+    "end": 0.329124
+   },
+   {
+    "text": "real",
+    "start": 0.34125,
+    "end": 0.596125
+   },
+   {
+    "text": "clouds",
+    "start": 0.60825,
+    "end": 1.020875
+   },
+   {
+    "text": "are",
+    "start": 1.033,
+    "end": 1.117958
+   },
+   {
+    "text": "made",
+    "start": 1.130083,
+    "end": 1.336374
+   },
+   {
+    "text": "of",
+    "start": 1.348541,
+    "end": 1.445624
+   },
+   {
+    "text": "tiny",
+    "start": 1.45775,
+    "end": 1.785416
+   },
+   {
+    "text": "water",
+    "start": 1.797583,
+    "end": 2.125249
+   },
+   {
+    "text": "drops",
+    "start": 2.137375,
+    "end": 2.537875
+   },
+   {
+    "text": "and",
+    "start": 2.55,
+    "end": 2.671375
+   },
+   {
+    "text": "ice",
+    "start": 2.6835,
+    "end": 3.168916
+   },
+   {
+    "text": "Candy",
+    "start": 4.004875,
+    "end": 4.393208
+   },
+   {
+    "text": "would",
+    "start": 4.405333,
+    "end": 4.550958
+   },
+   {
+    "text": "take",
+    "start": 4.563125,
+    "end": 4.805833
+   },
+   {
+    "text": "magic",
+    "start": 4.817958,
+    "end": 5.400499
+   }
+  ]
+ },
+ "s04": {
+  "dur": 7.056,
+  "words": [
+   {
+    "text": "Falling",
+    "start": 0.098541,
+    "end": 0.535416
+   },
+   {
+    "text": "candy",
+    "start": 0.547583,
+    "end": 0.935916
+   },
+   {
+    "text": "speeds",
+    "start": 0.948041,
+    "end": 1.324249
+   },
+   {
+    "text": "up",
+    "start": 1.336416,
+    "end": 1.494166
+   },
+   {
+    "text": "until",
+    "start": 1.506291,
+    "end": 1.821832
+   },
+   {
+    "text": "air",
+    "start": 1.834,
+    "end": 1.99175
+   },
+   {
+    "text": "drag",
+    "start": 2.003875,
+    "end": 2.343666
+   },
+   {
+    "text": "balances",
+    "start": 2.355833,
+    "end": 2.889833
+   },
+   {
+    "text": "gravity",
+    "start": 2.901958,
+    "end": 3.435958
+   },
+   {
+    "text": "Size",
+    "start": 4.271833,
+    "end": 4.781541
+   },
+   {
+    "text": "and",
+    "start": 4.793708,
+    "end": 4.915083
+   },
+   {
+    "text": "shape",
+    "start": 4.927166,
+    "end": 5.254832
+   },
+   {
+    "text": "set",
+    "start": 5.267,
+    "end": 5.509708
+   },
+   {
+    "text": "that",
+    "start": 5.521833,
+    "end": 5.691749
+   },
+   {
+    "text": "speed",
+    "start": 5.703875,
+    "end": 6.213583
+   }
+  ]
+ },
+ "s05": {
+  "dur": 4.872,
+  "words": [
+   {
+    "text": "Hard",
+    "start": 0.098541,
+    "end": 0.401957
+   },
+   {
+    "text": "sweets",
+    "start": 0.414083,
+    "end": 0.778166
+   },
+   {
+    "text": "could",
+    "start": 0.790291,
+    "end": 0.972332
+   },
+   {
+    "text": "sting",
+    "start": 0.984458,
+    "end": 1.445624
+   },
+   {
+    "text": "Soft",
+    "start": 2.281541,
+    "end": 2.754832
+   },
+   {
+    "text": "gummies",
+    "start": 2.767,
+    "end": 3.131083
+   },
+   {
+    "text": "would",
+    "start": 3.143208,
+    "end": 3.276708
+   },
+   {
+    "text": "just",
+    "start": 3.288833,
+    "end": 3.507291
+   },
+   {
+    "text": "splat",
+    "start": 3.519416,
+    "end": 4.016999
+   }
+  ]
+ },
+ "s06": {
+  "dur": 5.256,
+  "words": [
+   {
+    "text": "Then",
+    "start": 0.098541,
+    "end": 0.426207
+   },
+   {
+    "text": "real",
+    "start": 0.438333,
+    "end": 0.693208
+   },
+   {
+    "text": "rain",
+    "start": 0.705333,
+    "end": 0.996583
+   },
+   {
+    "text": "would",
+    "start": 1.00875,
+    "end": 1.154375
+   },
+   {
+    "text": "melt",
+    "start": 1.1665,
+    "end": 1.409208
+   },
+   {
+    "text": "the",
+    "start": 1.421375,
+    "end": 1.494208
+   },
+   {
+    "text": "sugar",
+    "start": 1.506291,
+    "end": 1.846082
+   },
+   {
+    "text": "into",
+    "start": 1.85825,
+    "end": 2.064541
+   },
+   {
+    "text": "sticky",
+    "start": 2.076708,
+    "end": 2.428666
+   },
+   {
+    "text": "syrup",
+    "start": 2.440791,
+    "end": 2.865541
+   },
+   {
+    "text": "flowing",
+    "start": 3.132541,
+    "end": 3.581582
+   },
+   {
+    "text": "into",
+    "start": 3.593708,
+    "end": 3.763624
+   },
+   {
+    "text": "drains",
+    "start": 3.775708,
+    "end": 4.406791
+   }
+  ]
+ },
+ "s07": {
+  "dur": 5.256,
+  "words": [
+   {
+    "text": "In",
+    "start": 0.098541,
+    "end": 0.280582
+   },
+   {
+    "text": "streams",
+    "start": 0.292708,
+    "end": 0.899499
+   },
+   {
+    "text": "microbes",
+    "start": 1.045125,
+    "end": 1.603375
+   },
+   {
+    "text": "eating",
+    "start": 1.615541,
+    "end": 1.918957
+   },
+   {
+    "text": "that",
+    "start": 1.931083,
+    "end": 2.088833
+   },
+   {
+    "text": "sugar",
+    "start": 2.100958,
+    "end": 2.477166
+   },
+   {
+    "text": "would",
+    "start": 2.489333,
+    "end": 2.622833
+   },
+   {
+    "text": "use",
+    "start": 2.634958,
+    "end": 2.865541
+   },
+   {
+    "text": "up",
+    "start": 2.877666,
+    "end": 3.011166
+   },
+   {
+    "text": "oxygen",
+    "start": 3.023291,
+    "end": 3.508707
+   },
+   {
+    "text": "that",
+    "start": 3.520875,
+    "end": 3.678625
+   },
+   {
+    "text": "fish",
+    "start": 3.690791,
+    "end": 3.994207
+   },
+   {
+    "text": "need",
+    "start": 4.006291,
+    "end": 4.394624
+   }
+  ]
+ },
+ "s08": {
+  "dur": 6.072,
+  "words": [
+   {
+    "text": "Magical",
+    "start": 0.098541,
+    "end": 0.656791
+   },
+   {
+    "text": "at",
+    "start": 0.668916,
+    "end": 0.765999
+   },
+   {
+    "text": "first",
+    "start": 0.778166,
+    "end": 1.336416
+   },
+   {
+    "text": "Sticky",
+    "start": 2.172333,
+    "end": 2.657749
+   },
+   {
+    "text": "for",
+    "start": 2.669916,
+    "end": 2.803416
+   },
+   {
+    "text": "much",
+    "start": 2.815541,
+    "end": 3.046124
+   },
+   {
+    "text": "longer",
+    "start": 3.05825,
+    "end": 3.59225
+   },
+   {
+    "text": "Would",
+    "start": 4.429625,
+    "end": 4.587375
+   },
+   {
+    "text": "you",
+    "start": 4.5995,
+    "end": 4.696583
+   },
+   {
+    "text": "try",
+    "start": 4.70875,
+    "end": 5.0
+   },
+   {
+    "text": "it",
+    "start": 5.012125,
+    "end": 5.218416
+   }
+  ]
+ }
+}

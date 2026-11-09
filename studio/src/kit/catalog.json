@@ -1,0 +1,35 @@
+{
+  "_types": "A list = allowed values (first one is the default). \"text\" = any short text. \"text*\" = required text. \"bool\" = true/false. \"color\" = \"#RRGGBB\".",
+  "Sky": {
+    "about": "The host stands on a low-poly hill under the sky. Use for the hook, reactions, everyday effects and the ending.",
+    "props": {
+      "host": ["kid", "robot", "none"],
+      "move": ["idle", "look-up", "happy", "yes", "no", "wave", "jump", "dance", "scared"],
+      "face": ["neutral", "surprised", "sad", "angry"],
+      "time": ["night", "day", "sunset", "dark"],
+      "moon": ["auto", "full", "fade", "none"],
+      "weather": ["none", "candy", "candy-heavy", "rain"],
+      "ground": ["grass", "candy", "syrup"],
+      "camera": ["push-in", "low-angle", "orbit", "close", "wide", "still"],
+      "title": "text"
+    }
+  },
+  "Planet": {
+    "about": "Low-poly Earth in space with an optional Moon. Use for planet-scale effects (tides, tilt, orbit).",
+    "props": {
+      "moon": ["orbit", "fade", "none"],
+      "tides": "bool",
+      "wobble": "bool",
+      "title": "text"
+    }
+  },
+  "StatCard": {
+    "about": "One big number or word with a label. Use for a key fact the viewer must remember.",
+    "props": {
+      "value": "text*",
+      "label": "text*",
+      "sub": "text",
+      "color": "color"
+    }
+  }
+}

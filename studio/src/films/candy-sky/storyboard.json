@@ -1,0 +1,177 @@
+{
+  "slug": "candy-sky",
+  "title": "What If the Sky Rained Candy?",
+  "mood": "playful",
+  "format": "short",
+  "fps": 30,
+  "ambience": [
+    {
+      "name": "amb-wind",
+      "startSec": 0,
+      "endSec": 70,
+      "volume": 0.2
+    }
+  ],
+  "thumbnail": {
+    "shot": "s01",
+    "at": 2.0
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "scene": "Sky",
+      "seconds": 6.23,
+      "props": {
+        "host": "kid",
+        "move": "look-up",
+        "time": "day",
+        "weather": "candy",
+        "camera": "low-angle",
+        "title": "What if the sky rained candy?"
+      },
+      "say": "What if candy fell from the sky? At first, it would look magical.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "whoosh",
+          "volume": 0.25
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "id": "s02",
+      "scene": "Sky",
+      "seconds": 4.83,
+      "props": {
+        "host": "kid",
+        "move": "happy",
+        "time": "day",
+        "weather": "candy",
+        "ground": "candy",
+        "camera": "orbit"
+      },
+      "say": "Jelly beans would bounce off the grass and pile up everywhere.",
+      "kind": "story"
+    },
+    {
+      "id": "s03",
+      "scene": "StatCard",
+      "seconds": 7.02,
+      "props": {
+        "value": "H2O",
+        "label": "Real clouds",
+        "sub": "Tiny water drops and ice crystals"
+      },
+      "say": "But real clouds are made of tiny water drops and ice. Candy would take magic.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "whoosh",
+          "volume": 0.2
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "id": "s04",
+      "scene": "Sky",
+      "seconds": 7.81,
+      "props": {
+        "host": "kid",
+        "move": "look-up",
+        "time": "day",
+        "weather": "candy-heavy",
+        "camera": "push-in"
+      },
+      "say": "Falling candy speeds up until air drag balances gravity. Size and shape set that speed.",
+      "kind": "story"
+    },
+    {
+      "id": "s05",
+      "scene": "Sky",
+      "seconds": 5.63,
+      "props": {
+        "host": "kid",
+        "move": "scared",
+        "time": "sunset",
+        "weather": "candy-heavy",
+        "ground": "candy",
+        "camera": "close"
+      },
+      "say": "Hard sweets could sting. Soft gummies would just splat.",
+      "kind": "story"
+    },
+    {
+      "id": "s06",
+      "scene": "Sky",
+      "seconds": 6.01,
+      "props": {
+        "host": "kid",
+        "move": "no",
+        "time": "sunset",
+        "weather": "rain",
+        "ground": "syrup",
+        "camera": "wide"
+      },
+      "say": "Then real rain would melt the sugar into sticky syrup, flowing into drains.",
+      "kind": "story"
+    },
+    {
+      "id": "s07",
+      "scene": "StatCard",
+      "seconds": 6.01,
+      "props": {
+        "value": "O2",
+        "label": "Used up",
+        "sub": "Microbes eating sugar use the oxygen fish need",
+        "color": "#50E6D2"
+      },
+      "say": "In streams, microbes eating that sugar would use up oxygen that fish need.",
+      "kind": "story"
+    },
+    {
+      "id": "s08",
+      "scene": "Sky",
+      "seconds": 6.83,
+      "props": {
+        "host": "kid",
+        "move": "wave",
+        "time": "day",
+        "weather": "candy",
+        "ground": "candy",
+        "camera": "push-in",
+        "title": "Would you try it?"
+      },
+      "say": "Magical at first. Sticky for much longer. Would you try it?",
+      "kind": "story"
+    }
+  ],
+  "youtube": {
+    "title": "What If the Sky Rained Candy? 🍬",
+    "description": "Jelly beans falling from the sky sounds like a dream. But what would happen next? From air drag to sticky streams, here is the sweet (and sticky) science. The candy storm is imaginary; the science is real.",
+    "hashtags": [
+      "#WhatIf",
+      "#Science",
+      "#CandyRain",
+      "#Shorts"
+    ]
+  },
+  "sources": [
+    {
+      "name": "NOAA — Clouds",
+      "url": "https://www.noaa.gov/jetstream/clouds",
+      "claim": "Cloud particles are tiny water droplets and/or ice crystals."
+    },
+    {
+      "name": "NASA Glenn — Terminal velocity",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/termvel/",
+      "claim": "A falling object stops speeding up when drag equals weight; area and shape (drag coefficient) set that speed."
+    },
+    {
+      "name": "USGS — Dissolved oxygen and water",
+      "url": "https://www.usgs.gov/water-science-school/science/dissolved-oxygen-and-water",
+      "claim": "Aquatic life needs dissolved oxygen; bacteria use oxygen as organic matter decays."
+    }
+  ]
+}

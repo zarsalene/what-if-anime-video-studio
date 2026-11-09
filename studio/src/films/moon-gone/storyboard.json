@@ -16,15 +16,16 @@
   "shots": [
     {
       "id": "s01",
-      "scene": "RobotSky",
+      "scene": "Sky",
       "seconds": 3.37,
       "props": {
         "time": "night",
         "moon": "fade",
-        "anim": "Idle",
         "face": "surprised",
         "camera": "push-in",
-        "title": "What if the Moon disappeared?"
+        "title": "What if the Moon disappeared?",
+        "host": "robot",
+        "move": "idle"
       },
       "say": "What if the Moon disappeared tonight?",
       "sfx": [
@@ -38,14 +39,15 @@
     },
     {
       "id": "s02",
-      "scene": "RobotSky",
+      "scene": "Sky",
       "seconds": 6.06,
       "props": {
         "time": "dark",
         "moon": "none",
-        "anim": "No",
         "face": "sad",
-        "camera": "close"
+        "camera": "close",
+        "host": "robot",
+        "move": "no"
       },
       "say": "First, nights would get much darker. No moonlight, ever.",
       "kind": "story"
@@ -93,31 +95,56 @@
     },
     {
       "id": "s06",
-      "scene": "RobotSky",
+      "scene": "Sky",
       "seconds": 5.84,
       "props": {
         "time": "night",
         "moon": "full",
-        "anim": "Yes",
         "face": "neutral",
-        "camera": "orbit"
+        "camera": "orbit",
+        "host": "robot",
+        "move": "yes"
       },
       "say": "So the Moon isn't just pretty. It helps keep our world steady.",
       "kind": "story"
     },
     {
       "id": "s07",
-      "scene": "RobotSky",
+      "scene": "Sky",
       "seconds": 3.13,
       "props": {
         "time": "night",
         "moon": "full",
-        "anim": "Wave",
         "camera": "push-in",
-        "title": "Would you miss the Moon?"
+        "title": "Would you miss the Moon?",
+        "host": "robot",
+        "move": "wave"
       },
       "say": "So... would you miss it?",
       "kind": "story"
+    }
+  ],
+  "mood": "wonder",
+  "youtube": {
+    "title": "What If the Moon Disappeared? 🌙",
+    "description": "No Moon tonight, or ever again. What would change on Earth? Darker nights, weaker tides, and a less steady tilt.",
+    "hashtags": [
+      "#WhatIf",
+      "#Science",
+      "#Moon",
+      "#Shorts"
+    ]
+  },
+  "sources": [
+    {
+      "name": "NOAA — What causes tides",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html",
+      "claim": "The Sun's tide-generating force is about half the Moon's, so Sun-only tides are about a third of today's combined tides."
+    },
+    {
+      "name": "Space.com — Earth's Moon may not be critical to life",
+      "url": "https://www.space.com/28472-earth-moon-life-oddity.html",
+      "claim": "Without the Moon, Earth's tilt would vary more; how much is debated (Laskar 1993 vs Lissauer 2011)."
     }
   ]
 }

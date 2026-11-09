@@ -1,9 +1,15 @@
 ---
 name: what-if
-description: Create original anime-style science “What If?” videos for YouTube, with researched narration, illustrated animation, balanced sound, captions, thumbnail and a verified MP4 export.
+description: Create original 3D science “What If?” YouTube Shorts by writing one storyboard.json and running make.py (kit mode) — researched narration, 3D host, voice, captions, music, thumbnail and a verified MP4 export.
 ---
 
 # What If Anime Video
+
+## Kit mode (default): the LLM writes only JSON
+
+Read `references/kit.md` and follow it. Write ONE file, `studio/src/films/<slug>/storyboard.json`, then run `py make.py <slug>` inside `studio/`. Do not write or edit code. The 3D toy-figure kit (main character: the kid; scenes in `studio/src/kit/catalog.json`), voice, captions, music, mix, thumbnail, SRT and YouTube text are all automatic. Use the custom mode below only when the user explicitly asks for hand-built shots.
+
+## Custom mode (only on request)
 
 Turn one imaginative question into a short, clear, scientifically grounded anime explainer. Make every What If Short exactly 60 seconds in 9:16 unless the user explicitly asks for a different runtime or aspect ratio. Deliver the complete video package and call it ready only after the final export passes the checks below.
 

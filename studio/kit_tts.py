@@ -18,6 +18,18 @@ SAY_AT, TAIL = 0.3, 0.45  # must match SAY_AT and TAIL in src/kit/index.tsx
 
 
 async def speak(text: str, mp3: Path) -> list[dict]:
+    # the online voice sometimes drops a request: retry before giving up
+    for attempt in range(3):
+        try:
+            return await speak_once(text, mp3)
+        except edge_tts.exceptions.NoAudioReceived:
+            if attempt == 2:
+                raise
+            print("  voice service gave no audio, retrying...", flush=True)
+            await asyncio.sleep(3 * (attempt + 1))
+
+
+async def speak_once(text: str, mp3: Path) -> list[dict]:
     audio, words = bytearray(), []
     stream = edge_tts.Communicate(text, VOICE, pitch=PITCH, rate=RATE, boundary="WordBoundary").stream()
     async for c in stream:
