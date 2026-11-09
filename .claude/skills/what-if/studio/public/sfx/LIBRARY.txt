@@ -1,0 +1,58 @@
+name	length	what it is
+step-floor-1	0.35s	one footstep on floor
+step-floor-2	0.35s	one footstep on floor
+step-floor-3	0.35s	one footstep on floor
+step-floor-4	0.35s	one footstep on floor
+step-street-1	0.35s	one footstep on street
+step-street-2	0.35s	one footstep on street
+step-street-3	0.35s	one footstep on street
+step-street-4	0.35s	one footstep on street
+step-grass-1	0.35s	one footstep on grass
+step-grass-2	0.35s	one footstep on grass
+step-grass-3	0.35s	one footstep on grass
+step-grass-4	0.35s	one footstep on grass
+key-1	0.18s	one keyboard key press
+key-2	0.18s	one keyboard key press
+key-3	0.18s	one keyboard key press
+key-4	0.18s	one keyboard key press
+key-5	0.18s	one keyboard key press
+key-6	0.18s	one keyboard key press
+key-space	0.18s	keyboard space bar
+mouse-click	0.10s	computer mouse click
+marker-squeak-1	0.44s	whiteboard marker stroke with a squeak
+marker-squeak-2	0.56s	whiteboard marker stroke with a squeak
+marker-squeak-3	0.68s	whiteboard marker stroke with a squeak
+marker-tap	0.12s	marker touching the board / cap click
+pen-write	2.40s	pen writing on paper, 2.4s
+pencil-write	2.40s	pencil writing on paper, 2.4s
+knock	0.90s	two knocks on a wooden door
+door-open	0.80s	door latch and swing open
+door-close	0.90s	door shutting
+plate-1	0.90s	ceramic plate clink
+plate-2	0.90s	ceramic plate clink
+plate-3	0.90s	ceramic plate clink
+cup-down	0.50s	mug set down on a table
+water-tap	3.50s	kitchen tap running (loops)
+beeps	1.16s	three electronic beeps (microwave, timer done)
+alarm	2.00s	phone alarm beeping (loops)
+ping	1.00s	phone message notification
+vibrate	1.10s	phone vibrating on a table
+laptop-close	0.50s	laptop lid closing
+page-flip	0.55s	turning a page
+clock-tick	4.00s	clock ticking (loops)
+switch	0.15s	light switch / lamp click
+heartbeat	1.60s	heartbeat (loops) — tension
+whoosh	1.10s	soft whoosh — time jump, transition
+sigh	1.50s	a tired sigh (wordless)
+gasp	0.60s	a short gasp (wordless)
+pant	2.00s	panting while running (loops)
+cloth	0.45s	clothes rustle — sitting down, standing up, turning
+shop-bell	1.60s	shop door bell
+car-horn	0.70s	car horn
+amb-room	9.50s	AMBIENCE: quiet indoor room tone (loops)
+amb-night	9.50s	AMBIENCE: night, room tone + distant crickets (loops)
+amb-city	9.50s	AMBIENCE: street / city hum with passing traffic (loops)
+amb-rain	9.50s	AMBIENCE: rain (loops)
+amb-wind	9.50s	AMBIENCE: wind outdoors (loops)
+amb-birds	9.50s	AMBIENCE: morning birds — payoff outdoors (loops)
+amb-gym	9.50s	AMBIENCE: big hollow room, distant thuds (loops)

@@ -1,0 +1,907 @@
+{
+  "slug": "five-minutes",
+  "title": "FIVE MINUTES",
+  "habit": "Checking the phone for five minutes at night until the whole night is gone",
+  "mode": "3d",
+  "fps": 30,
+  "short": {
+    "startSec": 92,
+    "endSec": 122,
+    "hook": "What if you lost forty years in one night?"
+  },
+  "music": [
+    {
+      "name": "sad",
+      "startSec": 0,
+      "endSec": 136,
+      "volume": 0.5
+    },
+    {
+      "name": "warm",
+      "startSec": 136,
+      "endSec": 182.5,
+      "volume": 0.55
+    }
+  ],
+  "ambience": [
+    {
+      "name": "amb-night",
+      "startSec": 4.5,
+      "endSec": 61,
+      "volume": 0.55
+    },
+    {
+      "name": "amb-room",
+      "startSec": 61,
+      "endSec": 73,
+      "volume": 0.6
+    },
+    {
+      "name": "amb-room",
+      "startSec": 77,
+      "endSec": 101,
+      "volume": 0.6
+    },
+    {
+      "name": "amb-night",
+      "startSec": 101,
+      "endSec": 136,
+      "volume": 0.55
+    },
+    {
+      "name": "amb-room",
+      "startSec": 136,
+      "endSec": 158,
+      "volume": 0.6
+    },
+    {
+      "name": "amb-wind",
+      "startSec": 158,
+      "endSec": 173,
+      "volume": 0.5
+    },
+    {
+      "name": "amb-city",
+      "startSec": 158,
+      "endSec": 173,
+      "volume": 0.45
+    },
+    {
+      "name": "amb-room",
+      "startSec": 173,
+      "endSec": 178,
+      "volume": 0.6
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "beat": 1,
+      "kind": "card",
+      "seconds": 4.5,
+      "what": "Opening line in italic serif on black: Five minutes is never five minutes.",
+      "narration": [
+        { "at": 0.5, "text": "Five minutes is never five minutes." }
+      ]
+    },
+    {
+      "id": "s02",
+      "beat": 1,
+      "kind": "story",
+      "seconds": 5.5,
+      "what": "Wide 3D bedroom at night, three-quarter view. A 22-year-old sits on the bed with the phone glow on his face; a telescope waits by the window and a hand-drawn star chart is pinned to the wall. Concept card: FIVE MINUTES.",
+      "foley": [
+        "cloth as he settles",
+        "thumb taps on the screen"
+      ],
+      "sfx": [
+        {
+          "at": 2,
+          "name": "ping",
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "beat": 2,
+      "kind": "story",
+      "seconds": 6,
+      "what": "Medium on the bed: he scrolls, face lit blue, thumbs moving. Orange thought: Just five minutes.",
+      "foley": [
+        "thumb taps",
+        "cloth"
+      ],
+      "narration": [
+        { "at": 2.5, "text": "Just five minutes." }
+      ]
+    },
+    {
+      "id": "s04",
+      "beat": 2,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Phone fills the frame: lock screen 11:58 PM, a few notifications waiting.",
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "ping",
+          "volume": 0.7
+        },
+        {
+          "at": 1.2,
+          "name": "vibrate",
+          "volume": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 12:14 AM; nothing else has moved.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 12:51 AM, orange thought: One more.",
+      "narration": [
+        { "at": 0.3, "text": "One more." }
+      ],
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 1:37 AM; the star chart waits on the wall.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 2:26 AM; the meteor shower hour passes unnoticed.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 3:08 AM; the first grey appears in his hair.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 3:58 AM; a notification pings from the phone.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "ping",
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 4:41 AM; the window is starting to pale.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 5:20 AM; grey hair at both temples.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Time label MORNING over a pale window; he has not moved.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "whoosh",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Time label NEXT NIGHT; the loop begins again.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "whoosh",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 11:58 PM; the plant has begun to droop.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "beat": 2,
+      "kind": "story",
+      "seconds": 6,
+      "what": "Close on his face in his forties: tired eyes, grey hair, screen glow. Orange: Just five minutes.",
+      "foley": [
+        "thumb taps",
+        "cloth"
+      ],
+      "narration": [
+        { "at": 0.5, "text": "Just five minutes." }
+      ],
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "sigh",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "beat": 2,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Phone fills the frame: lock screen 1:12 AM with 214 notifications.",
+      "sfx": [{ "at": 0.2, "name": "ping", "volume": 0.7 }, { "at": 1.5, "name": "vibrate", "volume": 0.55 }]
+    },
+    {
+      "id": "s18",
+      "beat": 2,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Wide again: dust on the telescope, a dead plant, his shoulders deeper in the bed. He keeps scrolling.",
+      "foley": [
+        "thumb taps",
+        "cloth"
+      ],
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "heartbeat",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "beat": 2,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Close on the star chart on the wall: METEOR SHOWER 2 AM circled in red. The date is still tonight.",
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "clock-tick",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "beat": 2,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Close on his thumb swiping; the clock overlay 5:41 AM sits over the grey window.",
+      "foley": [
+        "thumb taps",
+        "cloth"
+      ],
+      "sfx": [
+        {
+          "at": 2,
+          "name": "sigh",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "beat": 3,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Phone fills the frame: lock screen 5:41 AM, FRIDAY, 412 notifications.",
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "ping",
+          "volume": 0.7
+        },
+        {
+          "at": 1.6,
+          "name": "vibrate",
+          "volume": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "beat": 3,
+      "kind": "story",
+      "seconds": 6,
+      "what": "He finally looks up. Dawn grey. The star chart has fallen, the telescope is under dust, the room is older. Slow push-in.",
+      "foley": [
+        "cloth",
+        "a dry swallow"
+      ],
+      "narration": [
+        { "at": 1.5, "text": "Where did it go?" }
+      ],
+      "sfx": [
+        {
+          "at": 1.5,
+          "name": "sigh",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "beat": 3,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Close on his old, wrinkled hand and the phone; the fingers tremble.",
+      "foley": [
+        "his hand trembling"
+      ],
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "vibrate",
+          "volume": 0.6
+        },
+        {
+          "at": 0.3,
+          "name": "heartbeat",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "beat": 3,
+      "kind": "story",
+      "seconds": 5,
+      "what": "He bends and picks the fallen star chart off the floor; dust rises in the window light.",
+      "foley": [
+        "paper picked up",
+        "cloth"
+      ],
+      "sfx": [
+        {
+          "at": 1,
+          "name": "page-flip",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "beat": 3,
+      "kind": "insert",
+      "seconds": 4,
+      "what": "Star chart fills the frame: the date circled red, METEOR SHOWER 2 AM, the paper yellowed.",
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "heartbeat",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "beat": 3,
+      "kind": "card",
+      "seconds": 4,
+      "what": "Interstitial on black, one word at a time: Older. Emptier. Later."
+    },
+    {
+      "id": "s27",
+      "beat": 3,
+      "kind": "story",
+      "seconds": 6,
+      "what": "Wide: the old man on the bed, the room empty and dusty, the phone the only light, the telescope broken in the corner. Slow push-in.",
+      "foley": [
+        "cloth"
+      ],
+      "sfx": [
+        {
+          "at": 0.5,
+          "name": "heartbeat",
+          "volume": 0.4
+        },
+        {
+          "at": 2.5,
+          "name": "sigh",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "beat": 4,
+      "kind": "story",
+      "seconds": 4,
+      "what": "Wide hallway in the morning: the neighbour girl waits by the lift in a yellow raincoat and school bag, humming.",
+      "foley": [
+        "her bag rustling",
+        "her soft humming"
+      ],
+      "sfx": [
+        {
+          "at": 1.2,
+          "name": "step-floor-1",
+          "volume": 0.75
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "beat": 4,
+      "kind": "story",
+      "seconds": 5,
+      "what": "He opens his door; warm hallway light spills in. The girl looks past him at the telescope.",
+      "foley": [
+        "door handle",
+        "the door swinging"
+      ],
+      "sfx": [
+        {
+          "at": 0.3,
+          "name": "door-open",
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "beat": 4,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Close on the girl. Yellow advice: My dad puts his phone in a drawer.",
+      "foley": [
+        "her backpack shifts",
+        "cloth"
+      ],
+      "narration": [
+        { "at": 1.0, "text": "My dad puts his phone in a drawer." }
+      ],
+      "sfx": [
+        {
+          "at": 3.2,
+          "name": "cloth",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "beat": 4,
+      "kind": "story",
+      "seconds": 4,
+      "what": "She goes to the lift; he looks at the phone in his hand, then back at the telescope.",
+      "foley": [
+        "her footsteps away",
+        "cloth"
+      ],
+      "sfx": [
+        {
+          "at": 0.8,
+          "name": "door-close",
+          "volume": 0.55
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 6,
+      "what": "Night. He opens the nightstand drawer, phone in hand. Orange urges: Just five minutes, One more, After this. Quiet white: Drawer.",
+      "foley": [
+        "drawer sliding open",
+        "cloth"
+      ],
+      "narration": [
+        { "at": 1.0, "text": "Just five minutes." },
+        { "at": 2.5, "text": "One more." },
+        { "at": 4.0, "text": "Drawer." }
+      ],
+      "sfx": [
+        {
+          "at": 0.4,
+          "name": "heartbeat",
+          "volume": 0.4
+        },
+        {
+          "at": 0.8,
+          "name": "door-open",
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "beat": 5,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Phone face-down in the open drawer; his old hand hovers over it, then stops.",
+      "foley": [
+        "cloth",
+        "his breath"
+      ],
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "vibrate",
+          "volume": 0.6
+        },
+        {
+          "at": 0.4,
+          "name": "heartbeat",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 4,
+      "what": "He closes the drawer; the screen light dies. He lets out a long breath.",
+      "foley": [
+        "drawer closing",
+        "a long sigh"
+      ],
+      "sfx": [
+        {
+          "at": 1.2,
+          "name": "laptop-close",
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 5,
+      "what": "He crosses to the telescope and wipes the dust off the lens with his sleeve.",
+      "foley": [
+        "his footsteps",
+        "cloth wiping the lens"
+      ],
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "cloth",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "beat": 5,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Close on the lens and his hand turning the eyepiece; dust drifts in the lamp light.",
+      "foley": [
+        "cloth on the lens",
+        "the eyepiece turning"
+      ],
+      "sfx": [
+        {
+          "at": 0.3,
+          "name": "cloth",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 5,
+      "what": "He looks through the telescope; the window is full of stars; his shoulders lift.",
+      "foley": [
+        "cloth",
+        "his breath"
+      ],
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "sigh",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 5,
+      "what": "The drawer buzzes behind him. He glances at it, hesitates, then looks back through the eyepiece.",
+      "foley": [
+        "the drawer buzzing",
+        "cloth"
+      ],
+      "sfx": [
+        {
+          "at": 0.6,
+          "name": "vibrate",
+          "volume": 0.6
+        },
+        {
+          "at": 0.8,
+          "name": "heartbeat",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 4,
+      "what": "He sits down on the bed, exhausted but calm; the first dawn light touches his old face.",
+      "foley": [
+        "cloth",
+        "his breath"
+      ],
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "sigh",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "A FEW WEEKS LATER: warm bedroom at dusk. The telescope is clean by the window, a green plant on the sill, the phone drawer dark. He adjusts the scope.",
+      "foley": [
+        "cloth",
+        "the telescope adjusting"
+      ],
+      "sfx": [
+        {
+          "at": 1.2,
+          "name": "marker-tap",
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "beat": 6,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Calendar on the wall: NOVEMBER with green checks filling the clear nights.",
+      "foley": [
+        "a marker on every green check"
+      ]
+    },
+    {
+      "id": "s42",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "The girl stands at the eyepiece, eye to the tube; he guides the telescope with one hand. Warm room.",
+      "foley": [
+        "his weight shifting",
+        "cloth",
+        "the eyepiece turning"
+      ],
+      "sfx": [
+        {
+          "at": 0.4,
+          "name": "cloth",
+          "volume": 0.5
+        },
+        {
+          "at": 1.5,
+          "name": "plate-1",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 4,
+      "what": "Close on her eye at the eyepiece; she gasps and her hand finds his sleeve.",
+      "foley": [
+        "cloth",
+        "a small gasp"
+      ],
+      "sfx": [
+        {
+          "at": 1.2,
+          "name": "gasp",
+          "volume": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "He sits on the bed and smiles, tired but calm, the warm room soft around him.",
+      "foley": [
+        "cloth",
+        "his breath"
+      ],
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "sigh",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Rooftop at sunset: the telescope on the low wall, the city below, he and the girl crossing the roof.",
+      "foley": [
+        "their footsteps on the roof",
+        "wind in their coats"
+      ],
+      "sfx": [
+        {
+          "at": 0.3,
+          "name": "step-floor-2",
+          "volume": 0.75
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "She points up; a meteor streaks across the sunset sky; both look up.",
+      "foley": [
+        "cloth",
+        "wind"
+      ],
+      "sfx": [
+        {
+          "at": 1.2,
+          "name": "whoosh",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Wide rooftop: two small figures and the telescope against the pink sky, the city lights coming on.",
+      "foley": [
+        "wind",
+        "distant city"
+      ],
+      "sfx": [
+        {
+          "at": 0.3,
+          "name": "amb-city",
+          "volume": 0.8
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Back in the empty bedroom, morning light: the drawer closed, the star chart new on the wall, the telescope gone up to the roof.",
+      "foley": [
+        "the door closing",
+        "cloth"
+      ],
+      "sfx": [
+        {
+          "at": 1.8,
+          "name": "door-close",
+          "volume": 0.55
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "beat": 7,
+      "kind": "card",
+      "seconds": 4.5,
+      "what": "End card: FIVE MINUTES in spaced serif caps, italic line: It takes your life one minute at a time.",
+      "narration": [
+        { "at": 0.5, "text": "It takes your life one minute at a time." }
+      ]
+    }
+  ]
+}

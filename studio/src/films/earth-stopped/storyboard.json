@@ -1,0 +1,217 @@
+{
+  "slug": "earth-stopped",
+  "title": "What If Earth Stopped Spinning?",
+  "premise": "A scientifically careful anime What If: if solid Earth stopped rotating instantly, air and water would retain momentum; if the planet then continued orbiting the Sun, a solar day would last about a year.",
+  "mode": "3d",
+  "format": "short",
+  "fps": 30,
+  "short": {
+    "startSec": 0,
+    "endSec": 60,
+    "hook": "What if Earth stopped spinning?"
+  },
+  "shots": [
+    {
+      "id": "dusk-city",
+      "beat": 1,
+      "seconds": 8,
+      "kind": "story",
+      "what": "Glide through a layered anime dusk city as traffic light trails echo the equator moving east.",
+      "narration": [
+        {
+          "startSec": 0.3,
+          "endSec": 6.2,
+          "text": "At the equator, Earth moves east at about sixteen hundred seventy kilometers an hour."
+        }
+      ],
+      "foley": [
+        "traffic hum"
+      ],
+      "sfx": [
+        {
+          "name": "soft-whoosh",
+          "at": 0.2,
+          "prompt": "A soft cinematic airy whoosh, quiet under narration."
+        }
+      ]
+    },
+    {
+      "id": "clock-baseline",
+      "beat": 2,
+      "seconds": 4,
+      "kind": "insert",
+      "what": "An ornate anime clock accelerates, freezes, and transitions to a clean equator speed graphic.",
+      "narration": [
+        {
+          "startSec": 0.2,
+          "endSec": 4,
+          "text": "We do not feel the spin; the ground, air and oceans travel with us."
+        }
+      ],
+      "foley": [
+        "clock ticks"
+      ],
+      "sfx": [
+        {
+          "name": "clock-freeze",
+          "at": 2.5,
+          "prompt": "A delicate clock tick that stops with a tiny soft shimmer."
+        }
+      ]
+    },
+    {
+      "id": "thought-experiment",
+      "beat": 3,
+      "seconds": 10,
+      "kind": "story",
+      "what": "The city ground locks in place while airborne leaves and cloud wisps continue east, clearly marked as a thought experiment.",
+      "narration": [
+        {
+          "startSec": 0.3,
+          "endSec": 8.9,
+          "text": "Imagine the solid ground stops instantly. It is a thought experiment; no known process can halt Earth that way."
+        }
+      ],
+      "foley": [
+        "wind through street"
+      ],
+      "sfx": [
+        {
+          "name": "soft-impact",
+          "at": 0.2,
+          "prompt": "A restrained low cinematic impact, brief and quiet under the voice."
+        }
+      ]
+    },
+    {
+      "id": "air-momentum",
+      "beat": 4,
+      "seconds": 9,
+      "kind": "story",
+      "what": "Camera follows loose paper and atmospheric ribbons past curved, detailed anime architecture without claiming a specific wind speed.",
+      "narration": [
+        {
+          "startSec": 0.6,
+          "endSec": 8.2,
+          "text": "The air and loose objects keep moving. The mismatch is greatest near the equator."
+        }
+      ],
+      "foley": [
+        "wind"
+      ],
+      "sfx": [
+        {
+          "name": "wind-swish",
+          "at": 1.1,
+          "prompt": "A soft broad wind pass, low in the mix under narration."
+        }
+      ]
+    },
+    {
+      "id": "ocean-response",
+      "beat": 5,
+      "seconds": 8,
+      "kind": "story",
+      "what": "A sculpted moonlit ocean swells toward a detailed coastal city; keep flooding conditional on how rotation stops.",
+      "narration": [
+        {
+          "startSec": 0.2,
+          "endSec": 7.4,
+          "text": "The oceans carry momentum too. Water would surge, but exact flooding depends on how the stop happens."
+        }
+      ],
+      "foley": [
+        "ocean swell"
+      ],
+      "sfx": [
+        {
+          "name": "wave-swell",
+          "at": 1,
+          "prompt": "A gentle cinematic ocean swell, no sharp crash, quiet under narration."
+        }
+      ]
+    },
+    {
+      "id": "year-long-day",
+      "beat": 6,
+      "seconds": 15,
+      "kind": "story",
+      "what": "A beautifully lit, stationary Earth sits against a moving Sun; the terminator advances slowly to represent the year-long solar day.",
+      "narration": [
+        {
+          "startSec": 0.2,
+          "endSec": 7.8,
+          "text": "If Earth stopped spinning but kept orbiting the Sun, one solar day would last about a year."
+        },
+        {
+          "startSec": 7.8,
+          "endSec": 14.8,
+          "text": "That means months of daylight, then months of night. Winds and ocean circulation would change."
+        }
+      ],
+      "foley": [
+        "spacious ambient tone"
+      ],
+      "sfx": [
+        {
+          "name": "space-glimmer",
+          "at": 0.3,
+          "prompt": "A small soft glassy shimmer as Earth appears, not a loud impact."
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "beat": 7,
+      "seconds": 6,
+      "kind": "story",
+      "what": "Pull back from the globe into a luminous starfield as the concise science takeaway appears in calm lettering.",
+      "narration": [
+        {
+          "startSec": 0.2,
+          "endSec": 5.8,
+          "text": "Climate needs models; spin shapes winds and oceans."
+        }
+      ],
+      "foley": [
+        "soft airy ambience"
+      ],
+      "sfx": [
+        {
+          "name": "closing-air",
+          "at": 0.1,
+          "prompt": "A subtle airy resolve that leaves room for the final narration."
+        }
+      ]
+    }
+  ],
+  "ambience": [
+    {
+      "name": "amb-city",
+      "startSec": 0,
+      "endSec": 12
+    },
+    {
+      "name": "amb-wind",
+      "startSec": 12,
+      "endSec": 31
+    },
+    {
+      "name": "amb-wind",
+      "startSec": 31,
+      "endSec": 48
+    },
+    {
+      "name": "amb-room",
+      "startSec": 48,
+      "endSec": 60
+    }
+  ],
+  "music": [
+    {
+      "name": "original-soft-cinematic-score",
+      "startSec": 0,
+      "endSec": 60
+    }
+  ]
+}

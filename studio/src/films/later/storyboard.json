@@ -1,0 +1,43 @@
+{
+  "slug": "later",
+  "title": "LATER",
+  "habit": "Leaving the dishes for later until later never comes",
+  "mode": "2d",
+  "fps": 30,
+  "short": { "startSec": 15.5, "endSec": 48, "hook": "He always said \"later.\" Then she came over." },
+  "music": [
+    { "name": "sad", "startSec": 0, "endSec": 29, "volume": 0.5 },
+    { "name": "warm", "startSec": 28, "endSec": 48, "volume": 0.55 }
+  ],
+  "ambience": [
+    { "name": "amb-night", "startSec": 4, "endSec": 20.5, "volume": 1.6 },
+    { "name": "amb-room", "startSec": 24.5, "endSec": 43.5, "volume": 1.8 }
+  ],
+  "shots": [
+    { "id": "s01", "beat": 1, "kind": "card", "seconds": 4, "what": "Opening line in italic serif on black: Later always sounds like a plan." },
+    { "id": "s02", "beat": 2, "kind": "story", "seconds": 4.5, "what": "Wide: dim kitchen at night, ceiling lamp. Man on the couch, phone glow on his face, three plates on the counter. Orange thought: Later.",
+      "foley": ["phone taps"], "sfx": [{ "at": 1.2, "name": "sigh", "volume": 0.6 }] },
+    { "id": "s03", "beat": 2, "kind": "montage", "seconds": 1, "what": "Same framing, pile of 6 plates. Orange: Later.",
+      "sfx": [{ "at": 0.1, "name": "plate-1", "volume": 0.7 }] },
+    { "id": "s04", "beat": 2, "kind": "montage", "seconds": 1, "what": "Same framing, pile of 11 plates. Orange: Tomorrow.",
+      "sfx": [{ "at": 0.1, "name": "plate-2", "volume": 0.7 }] },
+    { "id": "s05", "beat": 2, "kind": "montage", "seconds": 1, "what": "Same framing, pile of 16 plates, clock overlay 11:48 PM.",
+      "sfx": [{ "at": 0.1, "name": "plate-3", "volume": 0.7 }, { "at": 0.2, "name": "clock-tick", "volume": 0.6 }] },
+    { "id": "s06", "beat": 2, "kind": "montage", "seconds": 1, "what": "Same framing, pile of 21 plates, leaning. Orange: Later.",
+      "sfx": [{ "at": 0.1, "name": "plate-1", "volume": 0.8 }] },
+    { "id": "s07", "beat": 3, "kind": "insert", "seconds": 3, "what": "Phone fills the frame: messages from Mia: Coming over tonight! Can we have tea?",
+      "sfx": [{ "at": 0.3, "name": "ping", "volume": 0.7 }, { "at": 0.9, "name": "ping", "volume": 0.6 }] },
+    { "id": "s08", "beat": 3, "kind": "story", "seconds": 5, "what": "Daughter with pigtails and a pink bow walks in and stops at the leaning pile. White line: No clean cups? He slumps. Slow push-in.",
+      "foley": ["footsteps of Mia walking in"], "sfx": [{ "at": 1.8, "name": "gasp", "volume": 0.4 }] },
+    { "id": "s09", "beat": 3, "kind": "card", "seconds": 4, "what": "Interstitial on black: Tired. Behind. Ashamed." },
+    { "id": "s10", "beat": 4, "kind": "story", "seconds": 5, "what": "Old neighbour with cap and glasses at the open door, warm hallway light. Yellow advice: Don't wash them all. Wash one.",
+      "sfx": [{ "at": 0.1, "name": "knock", "volume": 0.8 }, { "at": 0.8, "name": "door-open", "volume": 0.6 }] },
+    { "id": "s11", "beat": 5, "kind": "story", "seconds": 5, "fadeOut": true, "what": "Man at the sink with one plate. Orange urges pile up around him: Later. Too tired. Tomorrow. Quiet white line: Just one.",
+      "foley": ["tap water and plate scrubbing once he starts"], "sfx": [{ "at": 0.3, "name": "heartbeat", "volume": 0.35 }] },
+    { "id": "s12", "beat": 6, "kind": "insert", "seconds": 4, "what": "Calendar: four red X's, then green checks fill in. Label: A FEW WEEKS LATER.",
+      "foley": ["a marker squeak on every mark"] },
+    { "id": "s13", "beat": 6, "kind": "story", "seconds": 5, "what": "Warm, golden kitchen, clean counter. He and his daughter hold mugs, both happy, she blushes.",
+      "foley": ["mug set down, cloth rustle"] },
+    { "id": "s14", "beat": 7, "kind": "card", "seconds": 4.5, "what": "End card: LATER in spaced serif caps, italic line: One plate is enough to start." }
+  ]
+}

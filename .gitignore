@@ -1,0 +1,30 @@
+# Node and TypeScript dependencies/build output
+studio/node_modules/
+studio/out/
+studio/dist/
+studio/build/
+studio/public/films/**/audio/
+studio/public/films/**/music/
+studio/public/films/**/tts/
+studio/public/films/**/thumb-frame.jpg
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Rendered video and generated audio previews/exports
+*.mp4
+/*.mp3
+/*.png
+/*.srt
+earth-stopped-audio-preview.mp3
+habit-film.zip
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+

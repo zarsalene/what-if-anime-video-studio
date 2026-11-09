@@ -1,0 +1,201 @@
+{
+  "slug": "one-more",
+  "title": "ONE MORE",
+  "habit": "Staying up for one more episode every night",
+  "mode": "3d",
+  "fps": 30,
+  "short": {
+    "startSec": 13.5,
+    "endSec": 37.5,
+    "hook": "Every night he said \"one more.\""
+  },
+  "music": [
+    {
+      "name": "sad",
+      "startSec": 0,
+      "endSec": 24,
+      "volume": 0.5
+    },
+    {
+      "name": "warm",
+      "startSec": 23,
+      "endSec": 37.5,
+      "volume": 0.55
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "beat": 1,
+      "kind": "card",
+      "seconds": 4,
+      "what": "Opening line in italic serif on black: Tonight always feels longer than it is."
+    },
+    {
+      "id": "s02",
+      "beat": 2,
+      "kind": "story",
+      "seconds": 4.5,
+      "what": "Wide 3D bedroom at night, three-quarter view. Man sits on the bed, laptop light on his face, desk lamp glowing. Orange thought: One more.",
+      "foley": [
+        "typing and clicking on the laptop"
+      ]
+    },
+    {
+      "id": "s03",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 1:12 AM.",
+      "sfx": [
+        {
+          "at": 0,
+          "name": "clock-tick",
+          "volume": 0.6
+        }
+      ],
+      "foley": [
+        "clicks"
+      ]
+    },
+    {
+      "id": "s04",
+      "beat": 2,
+      "kind": "montage",
+      "seconds": 1,
+      "what": "Same framing. Clock overlay 2:47 AM.",
+      "sfx": [
+        {
+          "at": 0,
+          "name": "clock-tick",
+          "volume": 0.6
+        }
+      ],
+      "foley": [
+        "clicks"
+      ]
+    },
+    {
+      "id": "s05",
+      "beat": 3,
+      "kind": "insert",
+      "seconds": 3,
+      "what": "Phone fills the frame: alarm 6:30 with Snooze and Stop, buzzing.",
+      "sfx": [
+        {
+          "at": 0.1,
+          "name": "alarm",
+          "volume": 0.7
+        },
+        {
+          "at": 0.1,
+          "name": "vibrate",
+          "volume": 0.6
+        },
+        {
+          "at": 1.5,
+          "name": "vibrate",
+          "volume": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "beat": 3,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Morning kitchen. Son with goggles runs up to the table and waves. Dad slumps, eyes half closed. White line from the son: Dad? Look!",
+      "foley": [
+        "son's footsteps running up, cloth"
+      ]
+    },
+    {
+      "id": "s07",
+      "beat": 4,
+      "kind": "story",
+      "seconds": 4.5,
+      "what": "His wife with a bun stands by the door, calm. Yellow advice: Close it at ten. Just tonight.",
+      "sfx": [
+        {
+          "at": 0.2,
+          "name": "door-open",
+          "volume": 0.5
+        }
+      ],
+      "foley": [
+        "her footsteps into the doorway"
+      ]
+    },
+    {
+      "id": "s08",
+      "beat": 5,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Bedroom, close three-quarter shot. Laptop open. Orange urges: One more. It's early. Quiet white: Close it. He closes it and the screen light goes out.",
+      "sfx": [
+        {
+          "at": 3.8,
+          "name": "laptop-close",
+          "volume": 0.8
+        },
+        {
+          "at": 0.2,
+          "name": "heartbeat",
+          "volume": 0.3
+        }
+      ],
+      "foley": [
+        "a few slow clicks before he closes it"
+      ]
+    },
+    {
+      "id": "s09",
+      "beat": 6,
+      "kind": "story",
+      "seconds": 5,
+      "what": "Bright morning on a green hill, blue sky. Dad and son walk side by side, slow drift. Label: A FEW WEEKS LATER.",
+      "foley": [
+        "footsteps on grass for both walkers"
+      ]
+    },
+    {
+      "id": "s10",
+      "beat": 7,
+      "kind": "card",
+      "seconds": 4.5,
+      "what": "End card: ONE MORE in spaced serif caps, italic line: The night is shorter than the morning."
+    }
+  ],
+  "ambience": [
+    {
+      "name": "amb-night",
+      "startSec": 4,
+      "endSec": 13.5,
+      "volume": 1.6
+    },
+    {
+      "name": "amb-room",
+      "startSec": 13.5,
+      "endSec": 23,
+      "volume": 1.8
+    },
+    {
+      "name": "amb-night",
+      "startSec": 23,
+      "endSec": 28,
+      "volume": 1.6
+    },
+    {
+      "name": "amb-birds",
+      "startSec": 28,
+      "endSec": 33,
+      "volume": 1.3
+    },
+    {
+      "name": "amb-wind",
+      "startSec": 28,
+      "endSec": 33,
+      "volume": 0.8
+    }
+  ]
+}
