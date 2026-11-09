@@ -4,7 +4,7 @@
     "about": "The host stands on a low-poly hill under the sky. Use for the hook, reactions, everyday effects and the ending.",
     "props": {
       "host": ["kid", "robot", "none"],
-      "move": ["idle", "look-up", "happy", "yes", "no", "wave", "jump", "dance", "scared"],
+      "move": ["idle", "look-up", "happy", "yes", "no", "wave", "jump", "dance", "scared", "walk", "spin", "catch"],
       "face": ["neutral", "surprised", "sad", "angry"],
       "time": ["night", "day", "sunset", "dark"],
       "moon": ["auto", "full", "fade", "none"],

@@ -57,5 +57,8 @@ export const SFX_LIBRARY = [
   "amb-wind",
   "amb-birds",
   "amb-gym",
+  "amb-candy",
+  "pop",
+  "boing",
 ] as const;
 export type LibrarySound = (typeof SFX_LIBRARY)[number];

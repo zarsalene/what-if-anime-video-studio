@@ -538,6 +538,42 @@ LIBRARY["amb-birds"] = (birds, "AMBIENCE: morning birds — payoff outdoors (loo
 LIBRARY["amb-gym"] = (gym, "AMBIENCE: big hollow room, distant thuds (loops)")
 
 
+# ---------------------------------------------------------------- kit sounds (3D What-If films)
+# Added last so every sound above keeps the same random numbers (rng is shared).
+def candy_patter(sec=8):
+    """Hard candies landing on grass and on each other: small bright plastic ticks."""
+    x = np.zeros(int(sec * SR))
+    n = int(0.03 * SR)
+    for _ in range(int(sec * 22)):
+        f = rng.uniform(1800, 4200)
+        tick = sines([f, f * 1.7], [0.012, 0.006], 0.03) * env(n, 0.0003, 0.01)
+        tick += shape(noise(0.03), 1500, 7000) * env(n, 0.0002, 0.004) * 0.6
+        x = place(x, tick * rng.uniform(0.15, 0.8), rng.uniform(0, sec))
+    return loopable(norm(x + shape(noise(sec), 200, 2000) * 0.03, -14))
+
+
+def pop():
+    """Bright bubble pop: a title or a number appears."""
+    tt = t(0.18)
+    f = 900 * np.exp(-tt * 18) + 320
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(len(tt), 0.001, 0.05)
+    x += shape(noise(0.18), 2000, 8000) * env(len(tt), 0.0003, 0.006) * 0.4
+    return fade(norm(x, -4))
+
+
+def boing():
+    """Springy hop: a character jumps."""
+    tt = t(0.45)
+    f = 220 + 140 * np.sin(2 * np.pi * 9 * tt) * np.exp(-tt * 6) + 120 * tt
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(len(tt), 0.002, 0.16)
+    return fade(norm(x, -6))
+
+
+LIBRARY["amb-candy"] = (candy_patter, "AMBIENCE: candy falling and bouncing (loops)")
+LIBRARY["pop"] = (pop, "bright pop — a title or number appears")
+LIBRARY["boing"] = (boing, "springy hop — a character jumps")
+
+
 def write_mp3(x, path):
     pcm = (np.clip(x, -1, 1) * 32767).astype(np.int16)
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:

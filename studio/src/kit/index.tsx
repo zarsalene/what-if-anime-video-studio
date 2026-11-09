@@ -3,6 +3,7 @@ import { AbsoluteFill } from "remotion";
 import { AudioManifest, Film, ShotPlan, Storyboard } from "../lib/Film";
 import { Captions, Word } from "./Captions";
 import { SCENES } from "./scenes";
+import { HOP_PERIOD } from "./Hosts";
 
 /*
   KIT FILM — a film made only from storyboard.json. Each shot names a kit scene and
@@ -30,8 +31,35 @@ export const kitStoryboard = (raw: Storyboard, captions: KitCaptions): Storyboar
     } as ShotPlan;
   });
   const total = shots.reduce((a, s) => a + s.seconds, 0);
+  // automatic sound: what the picture shows. A shot's own "sfx" list plays on top.
+  const ambience = [...(raw.ambience ?? [])];
+  let start = 0;
+  shots.forEach((s, i) => {
+    s.sfx = [...autoSfx(s, shots[i - 1]), ...(s.sfx ?? [])];
+    const weather = (s.props ?? {}).weather;
+    const bed = weather === "candy" ? ["amb-candy", 0.35] : weather === "candy-heavy" ? ["amb-candy", 0.6] : weather === "rain" ? ["amb-rain", 0.55] : null;
+    if (bed) {
+      const last = ambience[ambience.length - 1];
+      // one continuous bed across cuts with the same weather (no dip at every cut)
+      if (last && last.name === bed[0] && last.volume === bed[1] && Math.abs((last.endSec ?? 0) - start) < 0.01) last.endSec = start + s.seconds;
+      else ambience.push({ name: bed[0] as string, startSec: start, endSec: start + s.seconds, volume: bed[1] as number });
+    }
+    start += s.seconds;
+  });
   // the generated score plays under the whole film (Film skips it if make.py has not made it yet)
-  return { ...raw, shots, music: raw.music ?? [{ name: "score", startSec: 0, endSec: total, volume: MUSIC_VOLUME }] };
+  return { ...raw, shots, ambience, music: raw.music ?? [{ name: "score", startSec: 0, endSec: total, volume: MUSIC_VOLUME }] };
+};
+
+const autoSfx = (s: ShotPlan, prev?: ShotPlan): NonNullable<ShotPlan["sfx"]> => {
+  const p = s.props ?? {};
+  const fx: NonNullable<ShotPlan["sfx"]> = [];
+  if (!prev || prev.scene !== s.scene) fx.push({ at: 0, name: "whoosh", volume: 0.18 });
+  if (p.title || s.scene === "StatCard") fx.push({ at: 0.15, name: "pop", volume: 0.4 });
+  if (p.move === "scared") fx.push({ at: 0.35, name: "gasp", volume: 0.25 });
+  if (p.move === "jump") {
+    for (let at = 0.13; at < s.seconds - 0.3; at += HOP_PERIOD) fx.push({ at: Math.round(at * 100) / 100, name: "boing", volume: 0.18 }); // take-off of each hop
+  }
+  return fx;
 };
 
 const kitShots = (sb: Storyboard) =>

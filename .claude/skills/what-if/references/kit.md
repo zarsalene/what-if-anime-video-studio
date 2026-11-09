@@ -10,7 +10,11 @@
 4. `py make.py <slug> --preview` — open `out/<slug>/contact_sheet.jpg`. Fix the JSON if a shot looks wrong.
 5. `py make.py <slug>` — final. Hand off: `out/<slug>/<slug>-final.mp4`, `thumbnail.png`, `<slug>.srt`, `youtube.md`.
 
-Voice, word captions, music, sound mix, loudness, thumbnail, subtitles and model credits are automatic.
+Voice, word captions, music, sound effects, sound mix, loudness, thumbnail, subtitles and model credits are automatic.
+
+**Voice.** Edge TTS by default. For an ElevenLabs (or any) voice, the user records ONE file that reads every `say` line in order, with a short pause between lines, and saves it as `studio/voice/<slug>.mp3`. `make.py` cuts it per shot automatically and stops with a clear error if the recording does not match the `say` lines. Change the recording or the `say` text until they match word for word.
+
+**Sound effects (automatic).** A whoosh plays when the scene type changes, and a pop on every `title` and `StatCard`. A `scared` move gets a gasp, and a `jump` move gets a boing on every hop. Candy weather adds a candy patter bed, and rain adds a rain bed. Add a shot `sfx` only for something extra.
 
 ## storyboard.json
 
@@ -40,9 +44,9 @@ Voice, word captions, music, sound mix, loudness, thumbnail, subtitles and model
 | Field | Rule |
 |---|---|
 | `mood` | music: `playful`, `wonder`, `calm`, `tense` |
-| `seconds` | minimum length; the shot grows to fit `say` automatically. Use 3. |
+| `seconds` | minimum length; the shot grows to fit `say` automatically. Use 3. `make.py` rewrites it and keeps your value in `seconds_min`. |
 | `say` | the narration line for the shot. Required. |
-| `sfx` | optional, built-in names only: `whoosh`, `ping`, `gasp`, `heartbeat`, `beeps`, `alarm`, `page-flip` |
+| `sfx` | optional extras, built-in names only: `whoosh`, `pop`, `boing`, `ping`, `gasp`, `heartbeat`, `beeps`, `alarm`, `page-flip` |
 | `ambience` | optional, one of `amb-wind`, `amb-rain`, `amb-night`, `amb-city`, `amb-birds`, `amb-room` |
 | `thumbnail` | which shot and second to use as the cover (titles show, captions do not) |
 
@@ -60,6 +64,6 @@ If the topic needs a visual that no scene has, do not write code. Tell the user 
 
 - 7–9 shots, about 35–55 s in total. A `say` line has at most 16 words; one fact per shot.
 - Shot 1 is the hook: it puts the question in `title` and in `say`. The last shot asks the viewer a question in `title`.
-- Change the `camera` or the scene on every cut. Use a `StatCard` for the one number or fact to remember.
+- Change the `camera` or the scene on every cut, and vary `move`. Moves: `look-up` (scan the sky), `catch` (dart side to side), `spin`, `jump`, `walk` (crosses the frame in 4 s), `happy`, `scared` (shiver, back away), `yes`, `no`, `wave`, `dance`, `idle`. Use a `StatCard` for the one number or fact to remember.
 - Write for the ear: short sentences and contractions. Hedge uncertain claims ("could", "scientists still debate").
 - Every factual `say` line must be covered by a `sources[].claim`. Imaginary premises are labelled as imaginary in `youtube.description`.

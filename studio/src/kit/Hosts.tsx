@@ -11,7 +11,7 @@ import { cancelRender, continueRender, delayRender, Easing, interpolate, staticF
   All motion is computed from the frame number, so every render is identical.
 */
 
-export type Move = "idle" | "look-up" | "happy" | "yes" | "no" | "wave" | "jump" | "dance" | "scared";
+export type Move = "idle" | "look-up" | "happy" | "yes" | "no" | "wave" | "jump" | "dance" | "scared" | "walk" | "spin" | "catch";
 export type Face = "neutral" | "surprised" | "sad" | "angry";
 export type HostName = "kid" | "robot";
 
@@ -33,7 +33,7 @@ export const useHostModel = (host: HostName | "none") => {
 };
 
 // ---------- robot: rigged clips ----------
-const ROBOT_CLIP: Record<Move, string> = { idle: "Idle", "look-up": "Idle", happy: "ThumbsUp", yes: "Yes", no: "No", wave: "Wave", jump: "Jump", dance: "Dance", scared: "No" };
+const ROBOT_CLIP: Record<Move, string> = { idle: "Idle", "look-up": "Idle", happy: "ThumbsUp", yes: "Yes", no: "No", wave: "Wave", jump: "Jump", dance: "Dance", scared: "No", walk: "Walking", spin: "Dance", catch: "Running" };
 const ROBOT_SCALE = 0.4; // measured: posed robot is 4.46 units tall → ~1.8 m
 
 const Robot: React.FC<{ gltf: GLTF; move: Move; face: Face }> = ({ gltf, move, face }) => {
@@ -64,21 +64,35 @@ const Robot: React.FC<{ gltf: GLTF; move: Move; face: Face }> = ({ gltf, move, f
 // ---------- kid: static figure, moved by code ----------
 const KID_HEIGHT = 1.5;
 
+// One hop cycle: crouch (anticipation) → stretch in the air → squash on landing.
+export const HOP_PERIOD = 0.72; // seconds; Sky's automatic "boing" sound uses the same period
+const hop = (t: number, height: number) => {
+  const c = (t % HOP_PERIOD) / HOP_PERIOD; // 0..1
+  if (c < 0.18) return { y: 0, sy: 1 - 0.14 * Math.sin((c / 0.18) * Math.PI) }; // crouch
+  const a = (c - 0.18) / 0.82; // airborne 0..1
+  return { y: height * Math.sin(a * Math.PI), sy: 1 + 0.1 * Math.sin(a * Math.PI) - 0.12 * Math.max(0, a - 0.9) * 10 };
+};
+
+// The kid is one static mesh, so every move is whole-body motion: lean, turn, hop, squash and stretch.
 const kidPose = (move: Move, t: number, enter: number) => {
   const s = Math.sin;
-  let y = 0.02 * s(t * 2.2), rx = 0, ry = 0, rz = 0.02 * s(t * 1.1), sy = 1;
+  // idle life under every move: breathing and a slow weight shift
+  let x = 0.03 * s(t * 0.9), y = 0, z = 0, rx = 0, ry = 0.12 * s(t * 0.6), rz = 0.025 * s(t * 1.1), sy = 1 + 0.012 * s(t * 2.4);
   switch (move) {
-    case "look-up": rx = -0.3 * enter; break;
-    case "happy": y = Math.abs(s(t * 5)) * 0.14; rz = 0.07 * s(t * 5); break;
-    case "yes": rx = 0.13 * s(t * 8); break;
-    case "no": ry = 0.4 * s(t * 7); break;
-    case "wave": rz = 0.14 * s(t * 5); y = Math.abs(s(t * 5)) * 0.04; break;
-    case "jump": { const p = Math.abs(s(t * Math.PI * 1.4)); y = p * 0.4; sy = 1 - 0.12 * Math.max(0, 0.25 - p) * 4; break; }
-    case "dance": ry = t * 3; y = Math.abs(s(t * 6)) * 0.12; break;
-    case "scared": rx = -0.1 * enter; rz = 0.035 * s(t * 40); sy = 0.97; break;
+    case "look-up": rx = -0.32 * enter; ry = 0.35 * s(t * 0.8); break; // tilt back and scan the sky
+    case "happy": { const h = hop(t, 0.22); y = h.y; sy = h.sy; rz = 0.08 * s(t * 4.4); ry = 0.3 * s(t * 2.2); break; }
+    case "yes": rx = 0.14 * s(t * 8); y = Math.abs(s(t * 4)) * 0.05; break;
+    case "no": ry = 0.45 * s(t * 7); rz = 0.04 * s(t * 3.5); break;
+    case "wave": rz = 0.15 * s(t * 5); y = Math.abs(s(t * 5)) * 0.06; ry = 0.2 * s(t * 2.5); break;
+    case "jump": { const h = hop(t, 0.55); y = h.y; sy = h.sy; ry = Math.floor(t / HOP_PERIOD) % 2 ? 0.3 : -0.3; break; }
+    case "dance": { const h = hop(t * 1.5, 0.12); y = h.y; sy = h.sy; ry = t * 3; rz = 0.1 * s(t * 6); break; }
+    case "scared": rx = -0.14 * enter; rz = 0.035 * s(t * 40); sy = 0.96; z = -0.35 * enter; break; // shiver and back away
+    case "walk": x = -1.1 + 2.2 * Math.min(1, t / 4); ry = 0.9; y = Math.abs(s(t * 8)) * 0.06; rz = 0.06 * s(t * 8); break;
+    case "spin": { const h = hop(t, 0.18); y = h.y; sy = h.sy; ry = t * Math.PI * 1.6; break; }
+    case "catch": { const h = hop(t * 1.3, 0.3); y = h.y; sy = h.sy; x = 0.5 * s(t * 1.6); rx = 0.18; ry = -0.5 * s(t * 1.6); break; } // dart side to side, leaning in
     case "idle": break;
   }
-  return { y, rx, ry, rz, sy };
+  return { x, y, z, rx, ry, rz, sy };
 };
 
 const Kid: React.FC<{ gltf: GLTF; move: Move }> = ({ gltf, move }) => {
@@ -96,7 +110,7 @@ const Kid: React.FC<{ gltf: GLTF; move: Move }> = ({ gltf, move }) => {
   const enter = interpolate(frame, [0, 12], [0, 1], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   const p = kidPose(move, frame / fps, enter);
   return (
-    <group position={[0, p.y, 0]} rotation={[p.rx, p.ry, p.rz]} scale={[1, p.sy, 1]}>
+    <group position={[p.x, p.y, p.z]} rotation={[p.rx, p.ry, p.rz]} scale={[1 + (1 - p.sy) * 0.5, p.sy, 1 + (1 - p.sy) * 0.5]}>
       <primitive object={scene} />
     </group>
   );

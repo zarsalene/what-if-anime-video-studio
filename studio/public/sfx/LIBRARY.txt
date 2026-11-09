@@ -56,3 +56,6 @@ amb-rain	9.50s	AMBIENCE: rain (loops)
 amb-wind	9.50s	AMBIENCE: wind outdoors (loops)
 amb-birds	9.50s	AMBIENCE: morning birds — payoff outdoors (loops)
 amb-gym	9.50s	AMBIENCE: big hollow room, distant thuds (loops)
+amb-candy	7.50s	AMBIENCE: candy falling and bouncing (loops)
+pop	0.18s	bright pop — a title or number appears
+boing	0.45s	springy hop — a character jumps
