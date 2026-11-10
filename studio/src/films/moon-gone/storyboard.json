@@ -126,14 +126,52 @@
   ],
   "mood": "wonder",
   "youtube": {
-    "title": "What If the Moon Disappeared? 🌙",
-    "description": "No Moon tonight, or ever again. What would change on Earth? Darker nights, weaker tides, and a less steady tilt.",
+    "keyword": "what if the moon disappeared",
+    "title": "What If the Moon Disappeared Tonight? 🌙",
+    "title_alternatives": [
+      "No Moon Tonight… What Changes on Earth?",
+      "The Moon Vanishes. Here's What Happens Next"
+    ],
+    "description": "What if the Moon disappeared tonight? Nights would go dark, tides would shrink to about a third, and Earth's tilt could drift more over millions of years.",
     "hashtags": [
       "#WhatIf",
-      "#Science",
       "#Moon",
+      "#Science",
       "#Shorts"
-    ]
+    ],
+    "tags": [
+      "what if the moon disappeared",
+      "what if the moon disappeared tonight",
+      "no moon",
+      "moon facts",
+      "tides",
+      "earth tilt",
+      "what if",
+      "space shorts",
+      "science shorts"
+    ],
+    "thumbnail_text": "NO MOON?!",
+    "audience": "general",
+    "playlist": "What If? Science Shorts",
+    "translations": {
+      "fr": {
+        "title": "Et si la Lune disparaissait ce soir ? 🌙",
+        "description": "Et si la Lune disparaissait ce soir ? Des nuits plus sombres, des marées environ trois fois plus faibles, et une inclinaison de la Terre moins stable sur des millions d'années."
+      },
+      "es": {
+        "title": "¿Y si la Luna desapareciera esta noche? 🌙",
+        "description": "¿Y si la Luna desapareciera esta noche? Noches más oscuras, mareas unas tres veces más débiles y una inclinación de la Tierra menos estable durante millones de años."
+      },
+      "pt": {
+        "title": "E se a Lua desaparecesse esta noite? 🌙",
+        "description": "E se a Lua desaparecesse esta noite? Noites mais escuras, marés cerca de três vezes mais fracas e uma inclinação da Terra menos estável ao longo de milhões de anos."
+      },
+      "ar": {
+        "title": "ماذا لو اختفى القمر الليلة؟ 🌙",
+        "description": "ماذا لو اختفى القمر الليلة؟ ليالٍ أشد ظلامًا، ومدّ وجزر أضعف بنحو ثلاث مرات، وميل لمحور الأرض أقل ثباتًا على مدى ملايين السنين."
+      }
+    },
+    "thumbnail_text_position": "bottom"
   },
   "sources": [
     {
@@ -146,5 +184,9 @@
       "url": "https://www.space.com/28472-earth-moon-life-oddity.html",
       "claim": "Without the Moon, Earth's tilt would vary more; how much is debated (Laskar 1993 vs Lissauer 2011)."
     }
-  ]
+  ],
+  "thumbnail": {
+    "shot": "s01",
+    "at": 1.0
+  }
 }

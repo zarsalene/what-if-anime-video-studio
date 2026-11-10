@@ -1,5 +1,6 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
+import { SANS } from "../lib/fonts";
 import { AudioManifest, Film, ShotPlan, Storyboard } from "../lib/Film";
 import { Captions, Word } from "./Captions";
 import { SCENES } from "./scenes";
@@ -92,5 +93,29 @@ export const kitFilm = (storyboard: unknown, audio: unknown, captions: unknown) 
       {!muted && <Captions words={words} />}
     </AbsoluteFill>
   );
-  return { component, storyboard: sb };
+  const raw = storyboard as ThumbRaw;
+  const shot = sb.shots.find((s) => s.id === raw.thumbnail?.shot) ?? sb.shots[0];
+  // the thumbnail composition is as long as its shot (timed effects stay right); make.py renders frame thumbnail.at
+  return { component, storyboard: sb, thumb: makeThumb(sb, raw, shot), thumbFrames: Math.round(shot.seconds * sb.fps) };
+};
+
+type ThumbRaw = { thumbnail?: { shot?: string; at?: number }; youtube?: { thumbnail_text?: string; thumbnail_text_position?: "top" | "bottom" } };
+
+// The cover: one frame of the chosen shot (no captions, no on-screen title) under 2–4 huge words.
+const makeThumb = (sb: Storyboard, raw: ThumbRaw, shot: ShotPlan): React.FC => () => {
+  const Scene = SCENES[shot.scene as keyof typeof SCENES];
+  const { title: _onScreenTitle, ...props } = shot.props ?? {};
+  const top = raw.youtube?.thumbnail_text_position !== "bottom";
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#000" }}>
+      <Scene {...props} />
+      {/* text goes where the subject is not: "top" (host low in frame) or "bottom" (sky or moon is the subject) */}
+      <AbsoluteFill style={{ background: `linear-gradient(${top ? 180 : 0}deg, rgba(5,8,20,.7) 0%, rgba(5,8,20,0) 40%)` }} />
+      <AbsoluteFill style={{ top: top ? 150 : 1200, height: 600, alignItems: "center", justifyContent: "center", padding: "0 50px" }}>
+        <div style={{ transform: "rotate(-3deg)", fontFamily: SANS, fontWeight: 700, fontSize: 156, lineHeight: 0.98, color: "#FFD84D", textAlign: "center", textTransform: "uppercase", WebkitTextStroke: "24px #0b0f1e", paintOrder: "stroke fill", filter: "drop-shadow(0 12px 24px rgba(0,0,0,.55))" }}>
+          {raw.youtube?.thumbnail_text ?? sb.title}
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
 };

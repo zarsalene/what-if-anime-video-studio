@@ -158,14 +158,53 @@
     }
   ],
   "youtube": {
-    "title": "What If the Sky Rained Candy? 🍬",
-    "description": "Jelly beans falling from the sky sounds like a dream. But what would happen next? From air drag to sticky streams, here is the sweet (and sticky) science. The candy storm is imaginary; the science is real.",
+    "keyword": "raining candy",
+    "title": "What If It Started Raining Candy? 🍬",
+    "title_alternatives": [
+      "Raining Candy Sounds Fun… Until This Happens",
+      "What Really Happens If It Rains Candy?"
+    ],
+    "description": "What if it started raining candy? Jelly beans from the sky sound like a dream, but physics and biology have other plans: air drag, sticky runoff, and fish that need oxygen. The candy storm is imaginary; the science is real.",
     "hashtags": [
       "#WhatIf",
+      "#RainingCandy",
       "#Science",
-      "#CandyRain",
       "#Shorts"
-    ]
+    ],
+    "tags": [
+      "raining candy",
+      "what if it rained candy",
+      "candy rain",
+      "candy from the sky",
+      "what if",
+      "what if science",
+      "science shorts",
+      "terminal velocity",
+      "jelly beans",
+      "fun science facts"
+    ],
+    "thumbnail_text": "IT'S RAINING CANDY",
+    "audience": "general",
+    "playlist": "What If? Science Shorts",
+    "translations": {
+      "fr": {
+        "title": "Et s'il pleuvait des bonbons ? 🍬",
+        "description": "Et s'il se mettait à pleuvoir des bonbons ? Ça semble magique, mais la physique et la biologie ont d'autres plans : la résistance de l'air, un ruissellement collant et des poissons qui ont besoin d'oxygène. La pluie de bonbons est imaginaire ; la science est réelle."
+      },
+      "es": {
+        "title": "¿Y si empezara a llover caramelos? 🍬",
+        "description": "¿Y si empezara a llover caramelos? Suena a un sueño, pero la física y la biología tienen otros planes: la resistencia del aire, ríos pegajosos y peces que necesitan oxígeno. La lluvia de caramelos es imaginaria; la ciencia es real."
+      },
+      "pt": {
+        "title": "E se começasse a chover doces? 🍬",
+        "description": "E se começasse a chover doces? Parece um sonho, mas a física e a biologia têm outros planos: a resistência do ar, enxurradas grudentas e peixes que precisam de oxigênio. A chuva de doces é imaginária; a ciência é real."
+      },
+      "ar": {
+        "title": "ماذا لو أمطرت السماء حلوى؟ 🍬",
+        "description": "ماذا لو بدأت السماء تمطر حلوى؟ يبدو الأمر كحلم، لكن للفيزياء والأحياء رأي آخر: مقاومة الهواء، وسيول لزجة، وأسماك تحتاج إلى الأكسجين. مطر الحلوى خيالي، لكن العلم حقيقي."
+      }
+    },
+    "thumbnail_text_position": "top"
   },
   "sources": [
     {

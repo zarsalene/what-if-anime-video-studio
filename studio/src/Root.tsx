@@ -8,9 +8,10 @@ import { EarthStopped, EarthThumb } from "./films/earth-stopped/EarthStopped";
 // Films normally render landscape. candy-rain is authored directly as a vertical Short.
 export const Root: React.FC = () => (
   <>
-    {FILMS.map(({ component, storyboard }) => (
+    {FILMS.map(({ component, storyboard, thumb, thumbFrames }) => (
       <React.Fragment key={storyboard.slug}>
         <Composition id={storyboard.slug} component={component} durationInFrames={filmLength(storyboard)} fps={storyboard.fps} width={storyboard.format === "short" ? 1080 : 1920} height={storyboard.format === "short" ? 1920 : 1080} />
+        {thumb && <Composition id={`${storyboard.slug}-thumb`} component={thumb} durationInFrames={thumbFrames ?? 1} fps={storyboard.fps} width={1080} height={1920} />}
         {storyboard.short && (
           <Composition
             id={`${storyboard.slug}-short`}

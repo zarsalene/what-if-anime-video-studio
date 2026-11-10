@@ -8,7 +8,7 @@ import { KIT_FILMS } from "./kit.generated";
 
 // Every film is listed here ONCE. The composition id is the slug.
 // To add a film: import it and add one line to FILMS. Kit films need nothing here: make.py lists them.
-export const FILMS: { component: React.FC<{ muted?: boolean }>; storyboard: Storyboard }[] = [
+export const FILMS: { component: React.FC<{ muted?: boolean }>; storyboard: Storyboard; thumb?: React.FC; thumbFrames?: number }[] = [
   { component: LaterFilm, storyboard: laterSb },
   { component: OneMoreFilm, storyboard: oneMoreSb },
   { component: FiveMinutesFilm, storyboard: fiveMinutesSb },
