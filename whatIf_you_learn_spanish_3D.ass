@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Top,Arial,62,&H00FFF5DE,&H000000FF,&H00121A2E,&H00121A2E,-1,0,0,0,100,100,0,0,1,2,0,8,70,70,200,1
+Style: Bottom,Arial,38,&H00FFF5DE,&H000000FF,&H00121A2E,&H00121A2E,0,0,0,0,100,100,0,0,1,1,0,2,80,80,185,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.50,Top,,0,0,0,,SPANISH IS EASY?
+Dialogue: 1,0:00:00.00,0:00:03.50,Bottom,,0,0,0,,Learn one word at a time.
+Dialogue: 0,0:00:03.50,0:00:07.50,Top,,0,0,0,,¡HOLA!
+Dialogue: 1,0:00:03.50,0:00:07.50,Bottom,,0,0,0,,HELLO
+Dialogue: 0,0:00:07.50,0:00:11.50,Top,,0,0,0,,MAÑANA
+Dialogue: 1,0:00:07.50,0:00:11.50,Bottom,,0,0,0,,TOMORROW
+Dialogue: 0,0:00:11.50,0:00:15.50,Top,,0,0,0,,ARAÑA
+Dialogue: 1,0:00:11.50,0:00:15.50,Bottom,,0,0,0,,SPIDER
+Dialogue: 0,0:00:15.50,0:00:19.50,Top,,0,0,0,,ARAÑA
+Dialogue: 1,0:00:15.50,0:00:19.50,Bottom,,0,0,0,,It can also mean “scratches” as a verb.
+Dialogue: 0,0:00:19.50,0:00:23.50,Top,,0,0,0,,ESPAÑA
+Dialogue: 1,0:00:19.50,0:00:23.50,Bottom,,0,0,0,,SPAIN
+Dialogue: 0,0:00:23.50,0:00:27.50,Top,,0,0,0,,TRY THIS!
+Dialogue: 1,0:00:23.50,0:00:27.50,Bottom,,0,0,0,,Say the phrase aloud.
+Dialogue: 0,0:00:27.50,0:00:33.50,Top,,0,0,0,,Mañana por la mañana,\Nla extraña araña de España…
+Dialogue: 1,0:00:27.50,0:00:33.50,Bottom,,0,0,0,,Tomorrow morning, the strange spider from Spain…
+Dialogue: 0,0:00:33.50,0:00:37.50,Top,,0,0,0,,SPANISH IS EASY!
+Dialogue: 1,0:00:33.50,0:00:37.50,Bottom,,0,0,0,,¡HOLA! Keep practicing.

@@ -1,0 +1,87 @@
+{
+  "slug": "spanish-learning",
+  "title": "What If You Learn Spanish in a Day?",
+  "habit": "A curious 3D kid host explores a few useful Spanish words and a playful tongue twister.",
+  "format": "short",
+  "mode": "3d",
+  "fps": 24,
+  "music": [
+    { "name": "voice-original", "startSec": 0, "endSec": 37.5, "volume": 1.0 }
+  ],
+  "thumbnail": { "shot": "s01", "at": 1.5 },
+  "youtube": {
+    "keyword": "learn Spanish",
+    "title": "What If You Learn Spanish in a Day?",
+    "description": "Can you learn Spanish in a day? Start with hola, mañana, and a playful Spanish tongue twister. A quick language-learning experiment with our 3D host.",
+    "hashtags": ["#Spanish", "#LearnSpanish", "#LanguageLearning", "#Shorts"],
+    "tags": ["learn Spanish", "Spanish for beginners", "Spanish words", "Spanish tongue twister", "language learning", "hola", "mañana"],
+    "thumbnail_text": "LEARN SPANISH?",
+    "audience": "general",
+    "thumbnail_text_position": "top"
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "seconds": 3.5,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "wave", "face": "neutral", "time": "sunset", "weather": "candy", "ground": "grass", "camera": "push-in", "title": "SPANISH IS EASY?" },
+      "what": "The 3D host greets the viewer as a few colorful candies fall through the sunset sky."
+    },
+    {
+      "id": "s02",
+      "seconds": 4,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "happy", "face": "neutral", "time": "day", "weather": "none", "ground": "grass", "camera": "low-angle", "title": "¡HOLA! = HELLO" },
+      "what": "The host practices the first Spanish greeting beneath a bright, clear sky."
+    },
+    {
+      "id": "s03",
+      "seconds": 4,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "yes", "face": "neutral", "time": "day", "weather": "none", "ground": "grass", "camera": "push-in", "title": "MAÑANA = TOMORROW" },
+      "what": "The host points viewers to mañana, the word for tomorrow."
+    },
+    {
+      "id": "s04",
+      "seconds": 4,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "scared", "face": "surprised", "time": "sunset", "weather": "none", "ground": "grass", "camera": "close", "title": "SPIDER = ARAÑA" },
+      "what": "A tiny spider appears beside the host as araña is introduced."
+    },
+    {
+      "id": "s05",
+      "seconds": 4,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "dance", "face": "neutral", "time": "sunset", "weather": "none", "ground": "grass", "camera": "orbit", "title": "ARAÑA: SPIDER / SCRATCHES" },
+      "what": "The host reacts playfully to the Spanish wordplay about a spider scratching."
+    },
+    {
+      "id": "s06",
+      "seconds": 4,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "spin", "face": "neutral", "time": "day", "weather": "none", "ground": "grass", "camera": "orbit", "title": "ESPAÑA = SPAIN" },
+      "what": "The host celebrates España and the Spanish place names in the tongue twister."
+    },
+    {
+      "id": "s07",
+      "seconds": 4,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "catch", "face": "neutral", "time": "day", "weather": "candy", "ground": "grass", "camera": "push-in", "title": "TRY THIS!" },
+      "what": "The host invites the viewer to try saying the Spanish phrase aloud."
+    },
+    {
+      "id": "s08",
+      "seconds": 6,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "yes", "face": "neutral", "time": "sunset", "weather": "none", "ground": "grass", "camera": "wide", "title": "MAÑANA POR LA MAÑANA…" },
+      "what": "The host attempts the tongue twister: Mañana por la mañana, la extraña araña de España araña con maña la telaraña de la montaña."
+    },
+    {
+      "id": "s09",
+      "seconds": 4,
+      "scene": "Sky",
+      "props": { "host": "kid", "move": "happy", "face": "neutral", "time": "day", "weather": "candy", "ground": "grass", "camera": "push-in", "title": "SPANISH IS EASY!" },
+      "what": "The host closes with a cheerful greeting and a few last falling candies."
+    }
+  ]
+}

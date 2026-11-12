@@ -2,5 +2,6 @@
 
 import f0 from "./candy-sky";
 import f1 from "./moon-gone";
+import f2 from "./spanish-learning";
 
-export const KIT_FILMS = [f0, f1];
+export const KIT_FILMS = [f0, f1, f2];
